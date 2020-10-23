@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+      //printing Array Elements Line By Line
+     /*
+      var c=['nikv' , 'nike', 'close', 'nikv','clic', 'vkv', 'nikv','close']
+      for(var i=0;i<=c.length;i++){
+      console.log(c[i]); 
+      }
+      */
+      
+
+   
+   var ary=[1,2,3,4,5,6,7,8];
+    var pro=[4,5,6,7];
+  // if(ary.length>5){
+    //   console.log(ary);
+  //  }
+
+        for(var i=0; i<=ary.length;i++){
+            if(ary[i]>5)
+             {
+                var c=pro.push(ary[i])
+                console.log(c);
+                }
+               
+                }
+                  // console.log(ary[i]);
+                   console.log(pro);
+
+  //Checking Is Array  Or Not
+
+      /*  var c=[];
+        var d=Array.isArray(c);
+        console.log(d)
+   }  */
+
+  //Entries
+  /*
+  var d=['nikv' , 'nike', 'close', 'nikv','clic', 'vkv', 'nikv','close']
+  var e=d.lastIndexOf('nikv')
+  console.log(e);
+
+  var d=[1,2,3,4,5,6,7]
+
+  var v=d.entries();
+  for(var x of v){
+    console.log(x)
+  } 
+  var d=[1,2,3,4,5,5,6,7];
+  var z=d.filter(list)
+  function list(d){
+   return d>2  
+}
+console.log(z)
+ Every and some will gives true or false  
+
+  var d=['shiv', 'crew', 'clone'];
+var s=d.forEach(nm)
+function nm(a,b){
+    console.log(a + ':'+ b)
+}  */
+
+// In Some method checking the value in array or not 
+/*
+var l=['shiv', 'clone', 'vrick'];
+var m=l.some(check);
+
+function check(d){
+ return d ==='shiv';
+}
+console.log(m);
+// In Every Method every value will equal otherwise it will return false
+var l=['shiv', 'clone', 'shiv'];
+var m=l.every(check);
+
+function check(d){
+ return d ==='shiv';
+}
+
+
+console.log(m);
+
+/*function check(){
+  for(var i=0;i<l.length;i++){
+    if(l[i].length<5){
+      return true;
+    }
+    else return  false;
+
+  }
+  }
+  console.log(m) */
+
+  
+
+
+
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

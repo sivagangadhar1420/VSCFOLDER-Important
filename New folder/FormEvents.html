@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //FormEvents
+//click ,DoubleClick , RightClick ,( MouseHover,(out, Down , Up)), Keypress, UP, Load, Unload , 
+//resize , scroll, Focus, blur, input  , change , select , submit, invalid......color, range ,   onmouseweel
+
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="submitForm()">
+   <!-- <label>Name</label>
+   
+    <input type="text" id="1" onfocus="funn1(this)" onblur="funn12(this)" onchange="ChangeFunction(this)" value="glimpson" oninput="inputFunction(this)" onselect="selectfunction()"><br><br>
+    <label>Class</label><input type="text" required><br><br>
+ 
+    Countries:<select onchange="ChangeFunction(this)"> 
+        <option value="Empty"></option>
+        <option value="India">India </option>    
+        <option value="Vijaywada"> Vijaywada</option>
+        <option value="Vishakapatanam">Vishakapatanam</option> 
+     <option value="Banglore">Banglore</option>  
+     <option value="Hyderbad">Hyderbad </option>
+    </select>
+    <button type="submit">Button</button>
+    </form>
+ <input type="text" id="t1" oninput="second.value=t1.value">
+ <button  onclick="addi()" type="submit">ADD</button>
+ <input type="text" id="second"> 
+ <div id="text" style="border: 2px solid red; height:30px; "></div>
+
+
+ <input type="text" id="n" oninput="m.value=n.value">
+<button>Clcik</button>
+<input type="text" id="m">
+
+<input type="text" id="o" oninput="p.value=o.value">
+<button>Clcik</button>
+<input type="range" id="p">
+
+<input type="color" id="q" oninput="r.value=q.value">
+<button>Clcik</button>
+<input type="text" id="r">
+<br>
+<input type="text" id="z1">
+<button type="submit" onclick="Mill()">Click</button>
+<input type="text"  id="z">  </form>-->
+
+//FormEvents Learn
+Name: <input type="text" id="n" value="Rocky"   oninvalid="vn()" required><br><br>
+Email: <input type="email" id="n1" oninvalid="alert('Please enter u mail')" required><br><br>
+Password: <input type="password" id="n2"><br><br>
+<button>Submit</button>
+
+</form>
+
+ <script>
+
+
+/* function selectFunction(){
+console.log("you selected the some text");
+}
+function secondFunction() {
+    console.log("sele")
+    
+}
+
+   
+   /*    function ChangeFunction(l){
+        var z=l.value; //document.getElementById("text").value;
+document.getElementById("text").innerHTML=z;
+         
+     }
+    function Mill() {
+        var a= document.getElementById("z1").value;
+        document.getElementById("z").innerHTML=a;
+         
+     }
+     
+       
+   function funn1(element){
+//document.getElementById("1").style.background="blue"
+element.style.background="blue";
+        }
+        function funn12(ele){
+            //document.getElementById("1").style.background="";
+ele.style.background="";
+        }  
+        
+      //LikeOninput  
+function inputFunction(element){
+var x=element.value;
+document.getElementById("text").innerHTML=x;
+}
+function addi(){
+    var i=document.getElementById("t1").value;
+    document.getElementById("second").innerHTML=i;
+}   
+ 
+function m() {
+    document.getElementById("n").style.background="blue";
+}  
+function s(){
+    console.log("you have selected")
+    
+}   */
+
+function vn(){
+    alert("please Enter U r name")
+    
+}
+//function valide(){
+  //  alert("please Enter u r Email")
+//}
+function submitForm() {
+   // var x=document.getElementById("n").value;
+    //var y=document.getElementById("n1").value;
+    //var z=document.getElementById("n2").value;
+alert("u have submiited") ;
+    
+}
+    </script>
+   
+   
+
+</body>
+</html>

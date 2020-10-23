@@ -1,0 +1,47 @@
+<html>
+<body>
+    <script>
+    //case1: to creating object
+    var s1={'id':501,'name':'raju'};
+    document.write(JSON.stringify(s1)+"<hr>")
+    //case2: to creating object
+    var eid=101;
+    var ename='Sanjay';
+    //+++++++property value shorthand example++++++++
+    var emp={eid,ename};
+    document.write(JSON.stringify(emp)+"<hr>")
+    //++++++Checking key existatnce++++++++++
+    var mobile={'number':9849098491,'model':'OppoF7','Cost':25000.50};
+    //alert('Cost' in mobile) //true
+    //alert('Color' in mobile)//false
+    //+++++copying one object into another object++++
+    var book1={'bid':10101,'bname':'Let Us C'};
+    var book2={'bcost':250,'nop':500};
+    var book3={};
+    //Object.assign(targetob,sourceob1,sourceob2,....);
+    Object.assign(book3,book1,book2)
+    document.write(JSON.stringify(book3)+"<hr>")
+    //+++++++"for .. in" loop ++++++++++
+    var product={'pid':601,'pname':'Keyboard','pcost':550}; 
+    document.write("<i>Keys are:</i><br>")  
+    for( k in product)
+    {
+        document.write(k+"<hr>")
+    }
+    document.write("<i>Values are:</i><br>")  
+    for( k in product)
+    {
+        document.write(product[k]+"<hr>")
+    }
+    document.write("<i>Key & Values are:</i><br>")  
+    for( k in product)
+    {
+        document.write(k+"->"+product[k]+"<hr>")
+    }
+    //+++++++"Object functions++++++++++
+    document.write(Object.keys(product)+"<hr>")
+    document.write(Object.values(product)+"<hr>")
+    document.write(Object.entries(product)+"<hr>")
+    </script>
+</body>
+</html>

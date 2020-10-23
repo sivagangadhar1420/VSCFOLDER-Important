@@ -1,0 +1,28 @@
+#accordion4 .panel-heading{
+    position: relative;
+}
+#accordion4 .panel-title a{
+    display: block;
+    padding: 15px 70px 15px 70px;
+    color:orange;
+    border:1px dotted;
+}
+#accordion4 .panel-title a:before,
+#accordion4 .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 55px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#accordion4 .panel-title a.collapsed:before{ 
+    content: "\f107"; 
+}
+p{
+    text-align:justify;
+}

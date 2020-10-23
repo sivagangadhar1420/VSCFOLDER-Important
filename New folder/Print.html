@@ -1,0 +1,1342 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+  
+  
+   var a=[1,8,5,3,0,10,12];
+   var b = ["shiva","purna","harika","shiva"]
+   var d = 132453;
+
+   /*  ArrayMethods
+    sort,reverse,pop,push,shift,unshift,concat,join,slice,
+   splice,isArray,indexOf,lastindexof,entries,every,filter,
+   find,findIndexOf,includes,some,forEach,toString,valueOf,fill,
+   spread,split,reduce,map  */
+
+//Sorting 
+
+ /*  var c= a.sort();
+   console.log(c);  */
+
+   //  Finding Array Length
+
+ /* var c=a.length; 
+  console.log(c)
+
+  console.log(a)
+ 
+   for (var d=0;d<a.length;d++){
+
+    console.log(a[d]);
+   } 
+    
+     var d=['shiv', 'crew', 'clone'];
+   for(var i=0;i<d.length;i++)
+     for(var i=0;i<d.length;i++)
+   {
+       console.log(d[i])
+       console.log(d)
+       console.log(i)
+ 
+   */
+
+   //Reverse 
+
+ /*  var c=a.reverse()
+   console.log(c);   */
+
+   // pop push shift unshift Concat Joins Splice  slice
+
+  /* var d=a.pop();
+   console.log(d)  //shows removed Element
+   console.log(a)  //After Removed Elements it shows remaining of Array   
+  
+   var d=a.push(123);  //shows Array size
+   
+   console.log(a);   //After Removed Elements it shows remaining of Array  
+
+var d=a.shift();
+   console.log(d)  //shows remoed Element
+   console.log(a)  //After Removed Elements it shows remaining of Array   
+  
+   var d=a.unshift(4);
+   console.log(d)  //shows Array Size
+   console.log(a)  //After Removed Elements it shows remaining of Array   
+
+   var d=a.concat(b);
+   console.log(d)  // Cocating Two arrays  
+   
+   var d=a.join('st');  // Joins the st to every number
+   console.log(d );
+   var d=a.join('/');
+   console.log(d)  
+                    
+   var d=a.splice(1,1,5,4,'w','e','r','t' ); // (position (index), How many Elements To delete, How many Elements Elemts To Add)
+   console.log(d)  //shows remoed Element
+   console.log(a)  //After Removed Elements it shows remaining of Array   
+
+   var d=a.slice(1,-4); // (0,1,2,3,4,5......  -4,-3, -2,-1 )
+   console.log(d)  //shows removed Elements
+   console.log(a)  //After Removed Elements it shows remaining of Array   */
+   
+   // Removing last  Element by using splice
+  /* var a=[1,2,3,4,5,6,7];
+   var d=a.splice(-1 , 2)
+   console.log(d)
+/*
+ //Checking Is array Or Not  
+ var Ar=[];
+ var d=Array.isArray(Ar); 
+ console.log(d)    */
+
+  //indexOf and LastIndexOf  
+
+ 
+  //indexOf 
+  /*var li=['nikv' , 'nike', 'close', 'nikv','clic', 'vkv', 'nikv','close'];
+  
+ var d=li.indexOf('close');
+  var e=li.indexOf('clic');
+  var g=li.indexOf('close');
+  var f=li.indexOf('vkv');
+  console.log(d,e,g,f);   
+ 
+  //LastIndexOf
+
+  var d=li.lastIndexOf('nikv');
+  var e=li.lastIndexOf('clic');
+  var f=li.lastIndexOf('close');
+  var g=li.lastIndexOf('close');
+  var h=li.lastIndexOf('cgg');
+  console.log(d,e,f,g,h)
+  console.log(d);   
+
+  //Entries
+
+  var d=['sl', 'll', 'vj', 'hj'];
+  //var d=[1,2,3,4,5,6,7]
+ var v=d.entries();
+  for(var x of v){
+    console.log(x)
+  }         
+*/
+  
+//Filter with Strings 
+/*
+var d=['shiv', 'crew', 'jannuss','clones'];
+
+var m=d.filter(flip)
+
+function flip(f){
+    for(var i=0;i<d.length; i++){
+      // return d[i]<5
+      if(d[i].length>5){
+        console.log(d[i]);
+      }
+}
+}   */
+
+//Filter method using  number Method
+  
+  /* var a=[1,2,3,4,5,6,7,8,9]
+    var z=a.filter(nm)
+    
+    function nm(f){
+   if(f%2 ===0){ 
+   return true;
+     }
+     console.log(z)
+    }  */
+
+   /*   if(f%2 !==0){ 
+    return true;
+      } 
+    
+    }  
+    console.log(z)   */
+
+        
+   /*    if(f>5){
+         return true;
+                 }
+    }
+  
+    console.log(z)    */
+     
+     // console.log(a)
+
+    
+    // Printing Names with less than 5 
+
+     /* var d=['shiv', 'crew', 'jannuss','clones'];
+  for(var i=0;i<d.length;i++){
+    if(d[i].length<5){
+        console.log(d[i])
+     }
+     }
+  */
+  
+
+    // printing Even numbers Using ForLoop
+ 
+  /*  for(var i=0;i<=100;i++){
+        if(i%2 === 0){
+            console.log(i)
+        }
+    }  */
+   
+  
+  /*  
+      var d=['shiv', 'crew', 'clone'];
+      var s=d.forEach(nm);
+      function nm(index, value){
+    console.log(index + ':' +value);
+}
+
+*/
+
+// Printing The Even numbers orOdd numbers from given Array
+  /*
+  var e=[1,2,3,4,5,6,7,8,9];
+var d=e.filter(fun);
+function fun(f){
+    if(f%2 ==0){
+      //if(f%2 !==0){}
+        return true;
+    }
+}
+console.log(d)          */
+
+// Filter() suppose  niku array lo greater or even or odd   Or Lengths of string ni print cheyyalantey we should use filter method in filter function
+
+//Find And  FindIndex
+//Index
+
+/*var ages=[12,15,19,31,2,6];
+var c=ages.find(checking);
+function checking(p){
+   return p>18;
+
+ 
+}    console.log(c)  */
+
+/*
+var ages=['sli','ship', 'charity', 'chore', 'cli']
+var c=ages.indexOf(checking)
+function checking(p){
+    for(var i=0;i<ages.length; i++){
+       if(ages[i].length>3){
+          // return p<5;
+         console.log(ages[i])
+       }
+     
+     }
+}
+    //console.log(c)  */
+ 
+                          
+//FindIndex
+/*
+var ages=[12,15,19,31,2,6];
+var c=ages.findIndex(checking)
+function checking(p){
+  
+        return p>18;
+          } 
+ 
+console.log(c)    */
+
+/*
+var ages=['sli','ship', 'charity', 'chore', 'cli']
+var c=ages.findIndex(checking)
+function checking(p){
+    for(var i=0;i<ages.length; i++){
+        if(ages[i].length>3){
+           // return ages[i]>3
+           console.log(ages[i])
+  }
+        } 
+       
+    }   */
+    
+    
+//includes  Checking it is in Array Or not
+
+ /*   var a=['ar','gk','kp','pr','arsr','tr'];
+
+
+var d=a.includes('tr');
+console.log(d);     */
+
+//some
+/* var valid=[1,2,3,4,5,1,2,4,18,19,23,24,6,7,8];
+var liv=valid.some(check);
+function check(c){
+             //  return c === 24;  
+            //  return c<=9;  //return c>=9;
+}
+console.log(liv); */ 
+
+
+/*var valid=['div','aiv','viv','divs','siv','biv','liv']
+var d=valid.some(check);
+function check(c){
+  
+  for(var i=0; i<valid.length;  i++){
+                        // return c === 'divs';
+                          return valid[i].length === 3;
+      }
+  }
+
+console.log(d)    */
+
+//Every 
+
+  // Every should be equal otherwise it will return false
+ 
+ /*
+  var d=['shiv', 'crew', 'clone']  //false
+ 
+  //  var d=['click', 'click', 'click']  //true
+   var c=d.every(checking)
+   function checking(p){
+ 
+  for(var i=0;i<d.length;i++){
+   return d[i].length >4; // >2;  
+    //  return p === 'shiv';
+    // return p === 'click'
+  }
+    }
+ console.log(c)   */
+
+ /* var a=[12,13,13,14,21,34,53];
+  var c=a.every(p);
+  function p(c){
+     //return c>0;
+     return c >=8;
+      
+
+  }
+console.log(c)     */
+
+//  comparing the Two variables with some or every methods
+/*var a=[3,4,5,6,5];
+var b=[3,7,6,8];
+var d=a.concat(b);
+//console.log(d)
+var e=d.every(fun);
+function fun(p){
+    return p > 6;
+
+}
+console.log(e)   */
+
+
+/*   var a=[3,4,5,6,5];
+var b=[1,2,6,8];
+var d=a.concat(b);
+console.log(d)
+var e=d.some(fun);
+function fun(p){
+    return p > 5;
+
+}
+console.log(e)    */
+
+// ForEach
+ 
+/* var a=['mon', 'tue', 'wed', 'thurs', 'friday','sat','sun'];
+ var d=a.forEach(each);
+ function each(index,value){
+   
+     console.log(value + ": " + index)
+}  
+ var names=["sanjay", " kumar", "karna"];
+ var d=names.forEach(funn);
+ function funn(index,value){
+     console.log(value +" : " + index)
+ }  
+     */
+  /*Argument	Description
+currentValue	Required. The value of the current element
+index	        Optional. The array index of the current element
+arr	Optional.      The array object the current element belongs to   */
+
+//Tostring valueOf
+//To string method() converts an array into string and returns result
+/*
+var a=["sanju", " akram", "vasim"];
+var d=a.toString()
+console.log(d)   */
+
+// ValueOf    
+//valueOF of returns an array         
+/* var a=["sanju", " akram", "vasim"];
+var d=a.valueOf()
+console.log(d)   */
+
+//Fill
+//The fill method will returns elements in an array with sa]tatic value
+/*
+var a=["sanju", " akram", "vasim"];
+var d=a.fill("Ram")
+console.log(d) */
+
+// Concating Array objects data tnto an  array
+
+/*
+var a=[
+  {fname:'sanjay',lname:'kumar'},
+  {fname:'jay',lname:'shetty'},
+  {fname:'jayram',lname:'kumar'}
+  ];
+  
+  (OR)
+
+//var d=a.map(text);
+//function text(p){
+//return  p.fname + " " + p.lname 
+//}
+console.log(a[0].fname+ " " + a[0].lname)  
+console.log(a[1].fname+ " " + a[1].lname) 
+console.log(a[2].fname+ " " + a[2].lname) 
+  /*
+var fname='kumar';
+var lname='sena';
+var t= fname + lname;
+var d=fname.concat(lname)
+console.log(t)
+console.log(d)  */
+
+ 
+ /*
+ var a=[1,2,3,4,5,6]
+ var d=a.map(funn);
+ function funn(p){
+  return p++;
+   console.log(p);  */
+ 
+ //Math sqrt....****
+ /*  
+function myFunction() {
+  var a = Math.sqrt(0);
+  var b = Math.sqrt(1);
+  var c = Math.sqrt(9);
+  var d = Math.sqrt(64);
+  var e = Math.sqrt(-9); }
+  console.log(a)
+  */
+
+//differeences of foreach and Forloop
+//Forloop
+/*var a=[{name:'sanju', id: 1, age:20},
+{name:'kumar', id: 1, age:20},
+{name:'uday', id: 1, age:20}];
+/*for(var i=0;i<a.length;i++){
+  console.log(a[i].name)
+}  */
+// Foeach
+/*
+var b=a.forEach(funn)
+function funn(p){
+  console.log(p.name)
+} 
+// console.log(a)   */
+
+/*
+var doop=[1,2,3,4,5,6,7,8,21,32,32,32,54,76,87,89,100] 
+var ages=[];
+for(var i=0;i<doop.length;i++){
+  if(doop[i]<91 && doop[i]>21){
+    ages.push(doop[i])
+
+  }
+}
+console.log(ages)
+//var drink=ages.filter(ate)
+function ate(p) {
+  if(p<=80 && p>=20)
+  {
+    console.log(p  + " He is Eligible ")
+  }
+  
+}
+
+/*
+var a=['sanjay', 'aman', 'karan'];
+var b=a.entries()
+for(var i=0;i<a.length; i++){
+    console.log(a)
+ console.log(a.length);
+
+    for(var x of b ){
+        console.log(x)
+    }
+   // console.log(a[i])
+}   */
+
+/*
+var a=['ar','gk','kp','pr','arsr','tr'];
+var b=[1,2,3,'p','ar','d'];
+var c=['ar','gk','kp','pr','arsr','lm'];
+var d=a.concat(b);
+var e=d.concat(c);
+
+var h=e.includes('lm');
+console.log(h);    */
+
+//Split
+/*var a="it was workking in the pAST ";
+var str=a.split(" ");
+console.log(str)   */
+
+//Join 
+/*var d=[1,2,3,4,5]
+var e=d.join("/")
+console.log(e)  */
+ 
+// For instance, here we transform each element into its length:
+
+
+// Map
+
+// Multipling the given array 
+
+ /*
+ var names=[{fname: 'sanjay', lname:'sahoo'},
+ {fname: 'sanjay', lname:'sahoo'},
+ {fname: 'sanjay', lname:'sahoo'}];
+
+var x=names.map(clutter);
+function clutter(c){
+  return c.fname + " " + c.lname;
+  
+}
+console.log(x)  */
+
+
+/*
+var a=[4,9,16,25];
+var x=a.map(funn1);
+  function funn1(p){
+  return Math.sqrt(p);
+}   
+   console.log(x);  */
+
+/*var a=[10,2,4,6,8,4];
+var b=a.map(double);
+
+function double(m){
+  return m*10;
+
+}
+console.log(b); */
+
+
+//Math Method  (Math.sqrt)
+/*
+var a=[4,9,16,25];
+var x=a.map(funn1);
+  function funn1(p){
+ // return Math.sqrt(p);
+  return p * 2;
+}   
+   console.log(x);      
+
+ /*  var ages=[20,30,40,21,32,43,54,76,7]
+  var aged=ages.map(cal => Math.sqrt(cal));
+  //var agile=ages.map(cal => cal*2)
+  console.log(aged)
+  console.log(agile)  
+ 
+ var ages=[20,30,40,21,32,43,54,76,7]
+  // var aged=ages.map(cal => Math.sqrt(cal)) .map(cal => cal * 4);
+ //console.log(aged)  
+ var ag=ages.sort(fun1)
+ function fun1(a,b){
+ return b - a
+ }
+ //a-b Assending Order 
+ //b-a descending Order
+ console.log(ag)      */
+
+ //REDUCE METHOD also write with for loop 
+
+ // var ages=[20,30,40,21,32,43,54,76,7];
+ /* var red=ages.reduce(reduce)
+ function reduce(t,d){
+   return t + d ;
+ }console.log(red)  
+ //ES6
+ var red=ages.reduce((t,d) => t + d )
+console.log(red)  */
+
+ //how to print the Element from last to front 
+ /*
+ var ga=ages.reverse()
+ console.log(ga)   */  
+ 
+
+
+ //Finding the lengths of an items
+
+/*
+var lengths = ["Bilbo", "Gandalf", "Nazgul"]
+var d =lengths.map(item => item.length)
+console.log(d);
+//document.write(d)
+// 5,7,6 
+  // OR
+var a=['shivaGR', 'viratk', 'abdevil'];
+for(var i=0; i<a.length;i++){
+  console.log(a[i].length)
+}
+    */
+  /*
+  let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+let user = users.find(item => item.id == 1);
+
+alert(user.name); // John
+
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+// returns array of the first two users
+let someUsers = users.filter(item => item.id < 3);
+
+alert(someUsers.length); // 2
+
+ //calculatting the inside Object Length
+
+/* console.log(objectLenght = Object.keys(exampleObject).length);  */
+  
+  /* var exampleObject = { 
+                id: 1, 
+                name: 'Arun', 
+                age: 30 
+            } 
+           // console.log(exampleObject)
+  
+            // Using Object.keys().length  method to get length 
+           var objectLenght = Object.keys(exampleObject); 
+            console.log(objectLenght)
+  
+           // document.querySelector('.output').textContent 
+             //       = objectLenght;      */
+        
+
+/* 
+var a=30;
+var b=40;
+console.log(a+ b);
+var a='30';
+var b='40';
+console.log(a + b)
+// console.log(eval(a) + eval(b))
+
+
+//Object Concatination
+/*
+var a = { a: 1 };
+var b = { b: 2 };
+var c = { c: 3 };
+//var obj=Object.assign(a,b,c)
+//OR
+var obj={...a, ...b, ...c}
+console.log(obj)   */
+ 
+ // Object creation methods
+
+ /*
+ var s1={id:1,name:"sai"}
+ var p=[1,2];
+ var g=p.push(s1);
+ //document.write(g)
+console.log(g)
+ 
+ 
+ var s2={}
+ s2.id=2;
+ s2.name="ramu";
+
+ var s3=new Object()
+ s3.id=3;
+ s3.name="Manoj";
+ 
+ function student(id,name1){
+   this.id1=id;
+   this.name2=name1;
+ }
+ var s4=new student(4,'venu');
+
+ document.write(JSON.stringify(s1)+"<hr>")
+ 
+ document.write(JSON.stringify(s2)+"<hr>")
+ 
+ document.write(JSON.stringify(s3)+"<hr>")
+ 
+ document.write(JSON.stringify(s4)+"<hr>")  */
+ 
+/* FIND USERs TO VALIDATE THE AGE
+ let army = {
+  minAge: 18,
+  maxAge: 27,
+  canJoin(user) {
+    return user.age >= this.minAge && user.age < this.maxAge && user.age;
+  }
+};
+
+
+let users = [
+  {age: 16},
+  {age: 20},
+  {age: 23},
+  {age: 30}
+];
+
+// find users, for who army.canJoin returns true
+let soldiers = users.filter(army.canJoin, army);
+
+console.log(soldiers.length); // 2
+console.log(soldiers); // 20
+// console.log(soldiers[1].age); // 23  */
+
+/* USING FOR LOOP TO VALIDATE AGES
+
+var army=[18,27];
+var users=[{ age:16},{age:18},{ age:16},{age:18},{ age:6},{age:27},{ age:26},{age:28}]
+var checking=users.filter(funn)
+function funn(validating) {
+  for(var i=0; i<users.length;i++){
+    //return users[length]<=18;
+    //if(users[i].age >= 18 && users[i].age<=27 ){
+      if(users[i].age>= army[0] && users[i].age <= army[1])
+      console.log(users[i])
+    }
+    }     OR FOREACH
+    var army=[18,27];
+var users=[{ age:16},{age:18},{ age:16},{age:18},{ age:6},{age:27},{ age:26},{age:28}]
+    var check=users.filter(funn1);
+    function funn1(p){
+     for(var i=0;i<users.length; i++){
+     // console.log("HI Anndi");
+     if(p.age>= army[0] && p.age<=army[1]){
+       
+     return true;
+     }
+      }
+      }
+    
+    console.log(check)
+
+
+    
+       
+ //company structure
+
+/*
+var companies=[{name:"Microsoft", start:2011, end: 2020, categeory:"Productbased"},
+{name:"Google", start:2004, end:2020 , categeory:"Retail"},
+{name:"TCS", start:1970, end:2020 , categeory:"Technology"}
+]
+var st=new Date().getFullYear();
+console.log(st);
+var c=st-15;
+console.log(c);
+/*
+for(var i=0; i<companies.length; i++){
+ //if( companies[i].end > c && companies[i].end <=st){
+    if( companies[i].start >= c && companies[i].end <=st){
+    console.log( companies[i]);
+  }
+}  
+
+var fill=companies.filter(funn1)
+function funn1(p){
+  if(p.start < c && p.end <= st){
+    return true;
+  }
+}
+console.log(fill)    */
+
+
+
+// }
+// console.log(companies)
+
+/*
+var eight=companies.filter(funn1);
+function funn1(p) {
+  if(p.categeory ===  "Productbased")
+  {
+    return true;
+  }
+  }
+console.log(eight)
+//ES6
+var eightc=companies.filter(company => company.categeory === "Productbased");
+ console.log(eightc);   */
+
+ 
+ /*var ninec=companies.filter(company => (company.start >= 1990 && company.start <= 2000));
+ console.log(ninec);   
+
+//Es6
+ var ninec=companies.filter(company => (company.start >=1995 && company.start <=2000));
+console.log(ninec);    */
+
+//Comapny working last 10 years
+  //ES6
+  /*
+//var ninec=companies.filter(company => (company.end - company.start <= 10));
+//var ninec=companies.filter(company => ( company.end - company.start <= 10));
+//console.log(ninec)
+
+//var ninec=companies.filter(company => (company.end - company.start <= 10));
+ //console.log(ninec);  
+ /*
+ var ninec=companies.filter(funn1)
+ function funn1(p) {
+   if(p.end - p.start <= 10)
+   return true   
+   
+ } console.log(ninec)  */
+
+/* printing company Names
+var ninec=companies.filter(fun1);  //if we use the filters  it will evrything  that related to an object means end start name categeory
+function fun1(p){
+  return p.name
+  return p.start
+  return p.end
+  //return p.start && p.end
+}
+console.log(ninec)   
+
+/*
+var ninec=companies.map(fun1);  //if we use the filters  it will evrythis that related to an object means end start name categeory
+function fun1(p){
+  return p.name
+}
+console.log(ninec)   */
+
+/*
+//Printing the CompanyNames and Years
+//ES6
+  var ninec=companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+console.log(ninec);
+var testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+    console.log(testMap);  
+
+
+var ninec=companies.map(funn1);
+function funn1(company){
+ return `${company.name}  [${company.start} - ${company.end}]`;
+
+}  
+  //return company.name 
+  //return company.start
+//return   company.end
+
+console.log(ninec);  */
+
+//   ES6  
+/*  var ninec=companies.map(company => (company.name));
+//console.log(ninec)          */
+
+//Sorting Method  For CompanyStructure
+/*
+//var stc=companies.sort();
+// console.log(stc)
+
+
+var stc=companies.sort(funn1)
+function funn1(s,d){
+  //if(s.start > d.start){
+    if(s.name > d.name){
+    return 1
+  }
+  else return -1
+} console.log(stc)  
+//ES6   Ternary ?  (? if  , : else )
+var stc=companies.sort((s,d) => ( s.start > d.start ? 1 : -1))
+console.log(stc)   */
+
+
+/*var stc=companies.reduce(funn1)
+function funn1(total , company) {
+  if(total + (company.end - company.start)){
+  
+
+} }
+console.log(stc);    */
+
+
+//Printing the companyNames along with Years
+/*onst testMaps=companies.reduce(function(company){
+  return '${company.name} [${company.start} - ${company-end}]' ;
+});
+console.log(testMaps)    ;
+
+var testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+        console.log(testMap);  
+//Printing the CompanyYears
+        var testMap = companies.map(company => `[${company.start} - ${company.end}]`);
+        console.log(testMap);  
+  */
+
+  //Calculating the all years of companies
+  
+  /*var total=companies.reduce(funn1,0)
+  function funn1(p , d ) {
+    return p + (d.end - d.start)  
+    }
+  console.log(total)    
+
+    var total=companies.reduce(function(p,d){
+    return p + (d.end - d.start)
+  },0);
+  console.log(total)   
+  //ES6
+var total=companies.reduce( (p,d) => p + (d.end -d.start),0)
+console.log(total)    */
+
+//Combined Methods
+
+
+
+// var ages=[20,30,40,11,12,32,13,14,41,56,65,90,90,95]
+// var blig=[1,2,3,4,5,6,7,8,21,32,43,5,46,56,87,98]
+ /*    var combined=ages
+                 // .map(agile => agile * 2 )
+               //  .map( p  => Math.sqrt(p))
+              // .filter(agile => agile>=30)
+              //  .sort((a,b) => a-b)
+                
+                
+                //.sort((a,b) => b -a )
+                
+               .reduce((a,b) => a+b,0)
+console.log(combined)     
+
+var con=ages.concat(blig);
+console.log(con)
+var sl=con.map(funn1)
+function funn1(p){
+  return p*2;
+
+} console.log(sl)
+ 
+ /*var combined=ages.map(funn1)
+ function funn1(p){
+   return p*2 ;
+   }
+ console.log(combined)
+
+ var combined=ages.reduce(funn1,0)
+ function funn1(a,b){
+   return a + b ;
+   }
+ console.log(combined);
+ var combined=ages.filter(funn1)
+ function funn1(p){
+   return p>=20 ;
+   }
+ console.log(combined)
+
+ var combined=ages.sort(funn1)
+ function funn1(p,q){
+   return p-q;
+   //return q-p;
+   }
+ console.log(combined)
+
+ var agile=ages.sort()
+ console.log(agile);   */
+
+  //Spread operator to controll the repeating Elements
+  //Spread operator prints the output with out array
+
+/*  var b =[]
+        for(i = 0; i<10; i++)
+        {
+          var a = prompt("enter the value of a")
+          b.push(a);
+        }
+        console.log(b)
+       var c = [...new Set(b)];
+       console.log(c);    */
+
+        
+     /*
+       var a=[1,2,3];
+        var b=[2,3,4]
+       function funn1(){
+         console.log(a+","+ b)
+         
+          }
+          funn1(...a,...b);  
+         
+           NewONE     
+         var a=[1,2,3,4,3,2,5];
+        var b=[];
+        b.push(a)
+        //console.log(b);
+        var c=[...new Set(a)];
+   
+        console.log(c);
+       
+    
+    //Even Number ffrom Given array
+     /*  var a=[1,2,3,4,5,6,7,8,9,10];
+    var d=a.filter(funn1)
+        
+    function funn1(p){
+      if(p % 2 ===0){
+        return true;
+        } 
+     
+    }  console.log(d)  */
+     
+     
+     // Pushing the data into An Empty Array
+/*var p=[];
+ var s1=[{id:1,name:"sai"},
+        {id:1,name:"sai"}];
+        s1.push({'name':'Jellies'});
+ 
+ //document.write(g)
+//console.log(g)  
+console.log(p)
+console.log(p.push(s1))
+console.log(p) // observe bothh 668 and 666
+ 
+var Ar=new Array();
+       // var user=prompt ("enter the name Or Number");
+        var  obj=[
+            {    'id':23, 'name': 'ajay'},
+            {    'id':23, 'name': 'ajay'},
+          
+           { 'id':24, 'name': 'raja'}];
+
+          //  We can push in this method to extra data also
+          obj.push({'name':'team'});
+          // obj.push();
+        
+     //    pushing user data (prompt) data into Array
+        // Ar.push(user);
+       
+        console.log(Ar);
+        console.log(Ar.push(obj))
+        console.log(Ar); // Obsrve both 684 and 686    
+
+        const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// expected output: 4
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+*/
+//Printing the seperat objects
+
+/*   let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+let names=[john,pete,mary]
+
+console.log(names[0].name) //names[0]  total objectwill print
+console.log(names[1].name)//names[1]
+console.log(names[2].name)//names[2]  */
+
+// console.log(names)
+// console.log(john)
+//console.log(pete)
+//console.log(names)
+
+
+/*  var d=names.map(funn1)
+function funn1(n){
+  return n.age
+ }
+console.log(d)    */
+// console.log(john.age)     
+ 
+
+
+/*let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let arr = [ pete, john, mary ];
+
+sortByAge(arr);
+
+// now: [john, mary, pete]
+alert(arr[0].name); // John
+alert(arr[1].name); // Mary
+alert(arr[2].name); // Pete  */
+    
+ /*  
+  let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+ 
+ console.log(john) 
+ console.log(john.name)  */
+  
+  //STRING METHODS
+
+/*  Length , toLowerCase, ToLowerCase , includes , Startswith ,
+ endWith, search , Match , indexOF, lastIndexOf, replace, trim,charAt , charCodeAt , formcharcode , concat , split, repeat , slice , 
+substr, substring, tostring , valueOf  */
+
+//ValueOf returns total array
+
+//Length
+/*
+ var a="Geeky shows are avaialable here to watch";
+var a=["janu", 'reethu', 'rajini' ]
+console.log(a.length)
+
+  */
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*
+   a.length         
+    console.log(c); 
+     var c = a. reverse()
+ a.push("shiva");
+  Array.isArray(d);
+  var c = a.entries();
+    for(x of c)
+    {
+        console.log(x);
+    }
+    console.log(c)
+
+     var c = a.filter((a)=>{
+        return a>=5;
+    })
+   
+   findIndex((a)=>
+    {
+        return a>10;
+    })
+    a.forEach((index,value)=>{
+        console.log(index +":"+ value)
+    });
+    */
+   // function pick(a)
+    //{
+    //    return a>= 5;
+    //}
+    
+    
+  //  var c = a.fill("shiva")
+    
+    //console.log(c);
+
+// Comparing two strings
+
+   // var a="virat";
+    //var b="virat";
+    //if(a===b){
+      //  console.log(true);
+    //}
+   // else{
+      //  console.log(false);
+   // }
+
+   // Repeating Numbers */
+
+   /* var a=[1,2,3,4,5,6];
+    var b=[4,2,3,9,0,10];
+// var c=a.concat(b);
+   // var c=(a +" " + b);
+      
+        function list(a,b)
+        {
+            for(var i =0; i<a.length;i++)
+            {
+                for(var j =0; j<b.length; j++)
+                {
+                    if(a[i]===b[j])
+                    {
+                        console.log(a[i]);
+                    }
+                }
+            }
+        
+        }
+var c = list(a,b);
+console.log(c);      */
+
+
+//
+/*var a=[1,2,3,4,5,6,7,8,9,10];
+ 
+var b=[1,2,5,6,5,9,6,8,3,2,2];
+for(var i=0; i<a.length; i++){
+  var arrlen = a.length;
+  for(var j=0; j<b.length; j++){
+  if(a[i]===b[j]) {
+    console.log(a[i]); 
+
+  
+ //  console.log(a[i]);
+// b.splice(b[j], 1);
+ //console.log(b[j]);
+
+
+   }
+
+  }
+  
+ }  
+printing Array Elements
+//console.log(x)
+// var x=20;
+var p=[2,1,4,5,6,3];
+for(var i=0;i<p.length;i++){
+    console.log(p[i])
+}
+*/
+/*var E=prompt("Enter Value Between");
+
+
+    if( E>=1 && E<=10)
+    {
+        for(var d=1; d<=10;d++){
+            console.log(d)
+        }
+    }else if(E>=11 && E<=20){
+        for( var t=11; t<=20; t++){
+
+        console.log(t);
+        }
+
+    }
+    else if( E<=30 && E>=20)
+    {
+        for(var g=21; g<=30;g++){
+            console.log(g)
+        }
+    }else if(E>=30 && E<=40){
+        for(var c=31;c<=40;c++){
+
+        console.log(c);
+        }
+
+    
+
+    
+      }else if(E>=40 && E<=50){
+        for(var d=41;d<=50;d++){
+
+        console.log(d);
+        }
+
+    }
+
+    
+
+    if( E<=60 && E>=50)
+    {
+        for(var d=51; d<=60;d++){
+            console.log(d)
+        }
+    }else if(E>=60 && E<=70){
+        for(var d=61;d<=70;d++){
+
+        console.log(d);
+        }
+
+    }
+    else if(E>=70 && E<=70){
+        for(var d=61;d<=70;d++){
+
+        console.log(d);
+        }
+
+    }
+    else if(E>=60 && E<=70){
+        for(var d=61;d<=70;d++){
+
+        console.log(d);
+        }
+
+    }
+    else if(E>=70 && E<=80){
+        for(var d=71;d<=80;d++){
+
+        console.log(d);
+        }
+
+    }
+    else if(E>=80 && E<90){
+        for(var d=81;d<=90;d++){
+
+        console.log(d);
+        }
+
+    }
+    else if(E>=90 && E<=100){
+        for(var d=91;d<=100;d++){
+
+        console.log(d);
+        }
+
+    }
+
+    
+*/
+
+    
+
+
+    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

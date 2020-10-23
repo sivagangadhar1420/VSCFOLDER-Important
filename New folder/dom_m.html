@@ -1,0 +1,448 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       body{
+          margin: 0px;
+       }
+    .shiva{
+        color: blue;
+        height:50px;
+        width:40px;
+    }
+    #b{
+       background-color: brown;
+       height: 30px;
+       width: 100%;
+    }
+    ul li{
+       float: left;
+       padding: 5px;
+       list-style-type: none;
+       
+       color: white;
+    }
+     .clue{
+      background-color: red;
+       height: 100px; 
+       width: 100%; 
+       color: white;
+      margin-left: 0px;
+      padding-left: 5px;
+      
+ 
+    }  
+    
+    .storm{
+         color:cyan;
+         background-color: darkgoldenrod;
+      }
+    .burger div {
+       height: 5px;
+       width: 25px;
+       background-color:rgba(100, 150,150, 150); 
+       margin: 5px;
+       margin-right: 50px;
+    }
+    .lonely{
+       
+       font-size: 15px;
+       }
+       #h2{
+          overflow: scroll;
+        }
+     
+    
+   </style>
+   
+   <script>    
+   
+   //DOM Manipulations
+   
+   // What we can get with DOM  (Html, Text , Attribute , )
+
+   //Document Get Methods
+   //InnerText , innerHtml , getAttribute , getAttributeNode , Attributes
+
+//Document Set Methods
+//InnerText , innerHTML , SetAttribute , Attribute, removeAttribute
+
+
+     //DOM Targetting Elements  GET SET ADD Html , CSS, Element Delete Html Element,remove repeat replacing
+
+     //Dom Targetting Objects
+     //document.getElementById, className , TagName,  document.getElementByName  ,querrySelector , QuerySelectoreAll , 
+
+
+     //Dom targeting Methods
+        /* document, document.all , document.documentleent(,html, Head Body) , document.ActiveElement , document.head ,document.forms,  document.title , document.body , document.images , document.anchors , document.links , document.forms , document.doctype , document.URL , document.baseURI , document.domain , Document.textContent */
+ 
+  // EventListnersm
+  //AddEventListner , removeEventListner
+  
+  //Click Events
+
+  //Click (onClick), doubleClick (onDblClick), RightClick (OnContextMEnu) , 
+
+//Mouse Related Events
+ //MouseOver (OnMouseOver) , MOuseOut(onMouseOut) , MouseDown (onMouseDown) , MouseUp(onMouseUp) , keyPRess(onkeyPress) , keyup(OnkeyUp) , Load(onload) , unLoad (unumLoad) , Resize (onResize) , scroll(onScroll), OnContextmenu()(RightClick).........
+
+  /* var a={name:"Baby", age:22};
+  // {name:"Rj", age:23}
+   var d=Object.entries(a)
+   console.log(d)  */
+
+ 
+     </script>  
+     
+</head>
+<body>
+   <!--
+    <div>
+    <p id="p" class="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae vero, autem architecto quisquam fugit? Cumque ullam ipsam necessitatibus distinctio neque reiciendis quae a hic, facilis, veniam deleniti, laudantium at!</p>
+    <p class="c">hhhhh</p>
+    <h1 class="c">Header</h1>
+    <a href="#"></a> <a href="#"></a>
+    <div class="id">HEy YOu</div>
+    <div class="s">Ok</div>
+    <div class="w">YY</div>
+    
+    <div class="s">Ok</div>
+    <div class="w">YY</div>
+    
+    <div class="s">Ok</div>
+    <div class="w">YY</div>
+</div>
+<ul class="c1" style="border: 1px solid red;">
+   <li>List1</li> 
+    <li>List2</li>  
+    <li>List<3/li> 
+     <li>List4</li>  
+     <li>List5</li>  
+     <li>List6</li>
+</ul>
+
+<img src="#">
+<img src="#">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat alias consequatur est voluptates dolore blanditiis explicabo nobis doloribus ullam. Illo assumenda debitis asperiores a libero inventore recusandae. Incidunt, earum inventore.</p>
+ <h1 style="color: blue;" id="h" onclick="funn1()">style the content</h1>   -->
+ <div id="w">
+ <div  id="c" class="clue">
+   <h4>The that duplicate</h4> 
+   <h4>The way you finding</h4> 
+   <h4 id="h2">The data arent ok</h4>
+   
+   
+
+  </div>
+ <div id="b">
+ <ul id="u" style="background-color: red;">
+   <li>Home</li>
+   <li>contacts</li> 
+   <li>Settings</li>
+
+</ul>
+</div>
+<ul id="ev">
+   <li>H</li>  
+   <li>N</li>
+   <li>C</li>
+</ul>
+<h3 id="ch">Checking it self</h3>
+<div class="burger">
+   <div class="line1"></div>
+   <div class="line2"></div>
+   <div class="line3"></div>
+</div>
+
+
+ <script>
+  //  var element;
+
+/*   document.getElementById("c").innerHTML="<h1>The Content u r  hello seeing</h1>";
+     document.getElementById("c").setAttribute( "style", " background-color:black; border:10px dotted yellow ; height:100px; width:100%; color:pink ;" );
+//document.getElementById("c").setAttribute("class", "n")
+//var r=document.getElementById("c").attributes[1].name;// .value
+//var r=document.getElementById("c").attributes[1].name="Eliga";  // .value
+//console.log(r)
+//document.getElementsByClassName("change")[0].setAttribute("style", " padding:30px; color:black")
+//var get=document.getElementById("c").getAttributeNode("style");
+//var get = document.getElementById("c").attributes;
+//console.log(get)
+
+//document.getElementById("c").setAttribute("style", " height:500px; border: 10px dotted yellow   ");
+
+//RemoveAttribute
+
+ /* var d=document.getElementById("c").removeAttribute("class");
+console.log(d)
+var st=document.getElementById("c").removeAttribute("style")
+console.log(st)
+var s=document.getElementById("c").attributes;
+console.log(s);  */
+
+//document.getElementById("c").style.color="yellow";
+
+//document.getElementById("c").style.border=" 5px dotted yellow";
+//var element=document.getElementById("c").setAttribute("class", "xyz")
+//console.log(element)
+
+//InnerText InerHTML
+
+//var e=document.getElementById("c").innerHTML="<h1>The Content u r  the matter  seeing</h1>";
+//var d=document.getElementById("h1").innerText="<h1>The total contnt will print except tags also</h1>"
+//console.log(d) 
+//console.log(e)
+
+//var at=document.getElementsByClassName("h1")[0].attributes;
+//console.log(at)
+
+//document.getElementById("h1").getAttribute("style")
+
+//QuerrySelector
+
+//var d= document.querySelector("#c").innerHTML="<h2>Ok Querry</h2>";
+//console.log(d)
+//var q=document.querySelector(".abd").innerHTML="<h1>Nice</h1>";
+//console.log(q)
+//document.querySelector("#c")[0].innerHTML="<h1>The texy rgata</h1>";
+
+//QuerrySelectorAll
+
+//var l=document.querySelectorAll("#c h4")[0].innerHTML="<a href=#><h3>Have you seen</h3></a>";
+// console.log(l)
+//var d=document.getElementById("c").innerHTML="<h1>Qwer</h1>";
+//console.log(d)
+//var see=document.querySelectorAll("#b ul"); 
+
+//var see=document.querySelectorAll( 'li')[1]; // ("u", "ul")[0], 
+//var see=document.querySelectorAll("#u", 'ul'); // ("#ev", " ul")
+//console.log(see)
+//var see=document.querySelectorAll("ul");            // 2
+//console.log(see);
+//var h=document.querySelectorAll("#ch" ,"h3")[0];
+//var h=document.querySelectorAll("#ch", "h")[0].innerHTML="Have some changess"; //.innerText()    //Will "Print like  Node["Data"]"
+//console.log(h)
+
+//DOM STYLES
+
+//var cs=document.getElementById("c").style.backgroundColor="yellow"
+//document.getElementById("c").style.color="red";
+/*  var e=document.querySelectorAll("#c")[0].style.color="red";
+var e=document.querySelectorAll("h4")[2].style.color="green";
+var e=document.querySelectorAll("#c")[0].style.textTransform="uppercase";  */
+
+//DOM class Name
+//var e=document.querySelectorAll("#c")[0].className="lonely  string";
+//console.log(e)
+
+//var e=documenvnt.querySelectorAll("#c" )[0].classList;
+ // console.log(e)
+ //var e=document.querySelector("#c").classList.add("stri", "Efg");
+ //var e=document.querySelector("#c").className;
+ // console.log(e)
+
+//ClassList Remove
+
+//var e=document.querySelector("#c").className.repeat(2);
+//var e=document.querySelector("#c").className.search("abd");
+//var e=document.querySelector("#c").className.replace(); //Replace repaet , StartsWith, Remove
+// var e=document.querySelector("#c").classList.remove("abd");
+// console.log(e);
+/*  var add=document.querySelector("#c").classList.add("stri","storm");
+console.log(add)
+var rem=document.querySelector("#c").classList.remove("storm");
+//console.log(rem)
+var a=document.querySelector("#c").classList; //className
+console.log(a);  
+
+/*var d=document.querySelector("#c").style.color="pink";
+var c1=document.querySelector("#c").style.backgroundColor="yellow";
+var rem=document.querySelector("#c").classList.remove("c1");
+var el=document.querySelector("#c").classList;
+console.log(rem)
+console.log(el)
+ */
+
+//AddEventListners
+/* var even=document.getElementById("c").onclick=fname;
+ function fname(){
+    document.getElementById("c").style.backgroundColor="yellow";
+      }   */
+      // document.getElementById("c").addEventListener("click", fname);
+      //function fname(){
+   // document.getElementById("c").style.backgroundColor="green";
+    //this.style.backgroundColor="green";
+      // }
+
+     // document.getElementById("c").addEventListener("click", function(){
+       //  document.getElementById("c").style.color="pink";
+         //            this.style.color="pink";
+    // document.getElementById("c").style.border="5px solid black";
+           //       this.style.border="5px solid black";
+               
+     //  });  */
+    
+    
+    
+    //RemoveEventListner
+    /*   document.getElementById("c").addEventListener("mouseleave",fun);
+    document.getElementById("c").addEventListener("mouseenter", funn1)
+    function fun(){
+       document.getElementById("c").style.backgroundColor="black";
+    }
+    function funn1(){
+   document.getElementById("c").removeEventListener("mouseleave",fun);
+
+    }      */
+
+
+    /*
+    document.getElementById("c").addEventListener("mouseleave",fun);
+    document.getElementById("c").addEventListener("mouseenter", funn1)
+    function fun(){
+       document.getElementById("c").style.backgroundColor="black";
+    }
+    function funn1(){
+   document.getElementById("c").removeEventListener("mouseleave",fun);
+
+    }
+     /* document.getElementById("u").addEventListener("mouseleave", abc);
+     //document.getElementById("c").addEventListener("click", xyz);
+     function abc(){
+         document.getElementById("u").style.backgroundcolor="green";
+     }
+     //function xyz(){
+     //   document.getElementById("c").removeEventListener("mouseleave",abc)
+     //}  
+
+  */
+
+ </script>
+
+   <!-- //INNERTEXT  
+//textcontent , className,
+
+   /* var i=document.getElementById("p").innerText;
+  console.log(i)   */
+
+/* var c=document.getElementsByTagName("ul")[0].textContent;
+ console.log(c)
+ var ul=document.getElementsByTagName("li"); //("ul")
+ console.log(ul)
+ var doc=document.doctype
+ console.log(doc)
+ /*  var x=document.images[0]
+   console.log(x)  */
+
+
+ //Document Get Methods
+   //InnerText , innerHtml , getAttribute , getAttributeNode , Attributes
+
+   //getAttribue will print the 
+/*  var h=document.getElementById("h").getAttribute("style");
+ console.log(h);
+ var gh=document.getElementById("h").getAttribute("onClick");
+console.log(gh);
+var c=document.getElementById("p").getAttribute("class");
+ console.log(c)   */
+
+ //Node willl print the like  attribute and value too  it same as Attributes
+   /*  var gh=document.getElementById("h").getAttributeNode("onClick").name;
+   console.log(gh)  */
+
+      //Attributes will print the Attributes like (p ,h) and values also if we are not mentioned at end
+   /*    var gh=document.getElementById("h").attributes[0]; // .name, .value
+   console.log(gh)    */
+
+   //DOM Set Methods
+   // innerText , innerHtml , SetAtribute , Attribute , removeAttribute  */
+
+
+
+    
+    //Dom Targetting Objects
+     //document.getElementById, className , TagName,  document.getElementByName  ,querrySelector , QuerySelectoreAll , 
+
+
+//ID
+      /*   document.getElementById("p").style.fontSize="100px";
+       document.getElementById("p").innerHTML="The content";
+      document.getElementById("p").style.color="red";  */
+
+      
+      // ClassName
+
+   /* var c= We also write without Variable
+      document.getElementsByClassName("c")[0].style.backgroundColor="yellow";
+    var d=document.getElementsByClassName("c")[0].innerHTML="Have u seen any difference";   */
+
+     //TagName
+
+        /*  var t=  document.getElementsByTagName("h1");
+           t[0].style.color="red";
+         document.getElementsByTagName("p")[0].innerHTML="OK";
+      document.getElementsByTagName("p")[1].style.color="red"
+        document.getElementsByTagName("h1")[0].innerHTML="Good"  
+
+//Queryselector 
+
+//document.querySelector("h1").innerHTML="ok Boy"
+//var t=  document.querySelector("p").style.backgroundColor="green";
+     
+ // Query selector All
+
+//document.querySelectorAll("p")[0].innerHTML="is this right"
+//document.querySelectorAll("p")[1].innerHTML="is this right ok"  </script>
+
+
+ <!-<a href="#" >Telugu</a> 
+   <p class="abba">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque minus accusantium a temporibus, est officiis, dicta voluptas amet ad ut excepturi quibusdam delectus fuga corporis! Consectetur animi eligendi doloribus?
+    </p> <br>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint amet odit quae eaque quasi ipsa labore laborum inventore eveniet dolor magnam voluptate distinctio, aspernatur laboriosam similique, aut culpa sapiente?
+    </span> <br>
+    <div id="abba1">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit laboriosam enim esse blanditiis temporibus doloribus accusantium quibusdam, laborum explicabo suscipit excepturi velit beatae tempora sed cum amet ad. Impedit, tenetur! 
+    </div>
+   -->
+    <script>
+   /*    document.getElementById('abba1').innerHTML = "shiva the thope";
+       document.getElementById('abba1').style.color="red";
+    document.getElementsByClassName('abba')[0].innerHTML  ="Fugit laboriosam enim esse blanditiis temporibus doloribus accusantium";
+    
+   document.getElementsByClassName('abba')[0].style.backgroundColor =" red";
+document.getElementById('abba1').innerText="shiva the thope the final";
+        document.getElementsByTagName('span')[0].style.backgroundColor="green";
+        let a=document.anchors.innerHTML ; // images//images, body//,head title//documentElement;//all, document
+console.log(a)    */
+         
+       
+//Document Objects
+//Printing th all the Dom Content
+ /* var x=document;
+console.log(x)   */
+
+//Prinnting All the Requirement of Document
+/*    var c=document.all //body,.baseURI,  .applets  head , doctype , images , document.documentElement ,document.documentURI, document.links , .contains,  document.scripts , document.URL ,document.title
+console.log(c)   
+//var g=document.contains
+//console.log(g)
+  */
+
+
+
+   
+
+
+
+    </script>
+
+    
+</body>
+
+</html>

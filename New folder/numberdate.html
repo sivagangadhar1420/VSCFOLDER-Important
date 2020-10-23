@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //NumberMrthods
+    /* Number ,parseInt, parseFloat, isFinite, isInteger , isFixed, toPrecision(x)  */
+   /*  // Number
+    //var a=true;
+   // var a=false;
+   // var a="20";
+    var a=20;
+    var num=Number(a);
+console.log(num);     */
+
+/*ParseInt  
+var a=" 10.23";
+var d=parseInt(a);
+console.log(d)    */
+/* ParseFloat  
+var a="Years 60";
+var a="10.30 hey age 60"
+console.log(parseFloat(a));   */
+ 
+ // ISFinite   IsInteger
+ /*
+ var f='10';
+var g="10String";
+console.log(isFinite(f));  
+console.log(isFinite(g));     
+
+var d=100;
+var b=10.3;
+var c=10-5;
+var a=false;
+var num1=Number.isInteger(d);
+var num2=Number.isInteger(b);
+var num3=Number.isInteger(c);
+var num=Number.isInteger(a)
+console.log(num);
+console.log(num1);
+console.log(num2);
+console.log(num3);      */
+
+//ToFixed  ToPrecission
+/*
+var fix=20;
+var fixed=fix.toFixed(2);;
+console.log(fixed)
+var a=20.456789;
+var f=a.toFixed(9)
+console.log(f)
+var p=20.345;
+var pr=p.toPrecision(30);
+console.log(pr)     */ 
+/*
+var fname='jane';
+var lname="jhon"
+var fullname=fname+""+ lname;
+console.log(fullname);    */
+/*
+    var score=100; 
+var bonus=200;
+var finascore=(score + bonus) *2.08 ;
+var complex = (( 12 + 7 ) * 5 ) / 6;
+                   console.log(finascore, complex);
+
+                   let temprature=40;
+                   let celsius=(temprature- 32) * 5/9
+                    console.log(celsius)   */
+
+                    //WhileLoope 
+                  
+              /*      var a=10;
+                    do{
+                        console.log(a);
+                    }
+                    while(a===10){
+                      console.log(a)
+                    }  
+
+                    var b=20;
+                    console.log(b)   */
+
+
+//DateYEAR Methods
+
+/*SetTimeOut and ClearTimeOut Methods
+
+var a=setTimeout(funn1,3500)
+    function  funn1() {
+     //   console.log("Please Hide")
+     var s=document.getElementById("b").style.width="500px"
+ }
+   function funn2(){
+  clearTimeout(a)
+     }
+
+     
+    
+/*setInterval(() => {
+    
+}, interval);   */
+
+
+
+ /*  SetInterval and clearInterval
+    var a=0;
+ var s=setInterval(()=>{
+   a=a+10;
+    console.log(a)
+    if(a==50){
+        clearTimeout(s)
+    }
+    document.getElementById("b").style.marginLeft=a+ "px";
+},1500)     */
+    </script>
+    <style>
+        #b{
+            height: 100px;
+            width: 80px;;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="b"></div>
+    <button onclick="funn2()">ClickStop</button>
+    <button onclick="funn1()">Flick</button>
+    
+</body>
+</html>

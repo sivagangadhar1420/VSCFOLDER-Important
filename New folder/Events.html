@@ -1,0 +1,282 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+//javascrript 
+//class list Methods
+
+//add(class1, class2...)  ,remove(class1, class2...) , toggle(class), contain(class), item(index),  length................
+
+//FormEvents
+//click ,DoubleClick , RightClick ,( MouseHover,(out, Down , Up)), Keypress, UP, Load, Unload , 
+//resize , scroll, Focus, blur, input  , change , select , submit, invalid......
+
+//SetInterval and clearInterval SetTimeout clearTimeOut
+
+
+    </script>
+    <style>
+        #mydiv{
+            height:200px; 
+            width: 40%;
+            background-color: orange;
+            padding : 10px;
+        }
+  /*  #outer{
+        height:200px;
+       border: 3px solid yellow;
+        width: 200px;
+        background-color: lawngreen;
+        margin: 40px;
+
+
+    }
+    #inner{
+        height:150px;
+        width: 150px;
+    
+        background-color: lightcoral;
+    border: 3px dotted red;
+    margin: 20px;
+    
+    }
+    
+    #last{
+        height: 80px;;
+        width: 70px;;
+        background-color: black;
+        color: white;
+        border: 3px dashed pink;
+    margin: 25px;
+    }  */
+    .styleClass{
+        display:table-cell;
+        border:1px solid black;
+        padding:20px;
+text-align: center;
+
+    }
+   
+    .any{
+        height:100px;
+        background-color: orange;
+        width: 50%;
+    }
+
+    
+    </style>
+    <script>
+
+
+
+    function hello(){
+    alert("HElloEveryOne");
+    }
+    </script>
+   
+
+</head>
+<!--<body onkeydown="hello()" >  ///// onkeypress, keydown keyup , resize, onscroll  
+    <button id="btn" type="button" onclick="clickme()" >Click me to dispaly</button>
+    <p id="text"> hide text</p>
+    <p ondblclick="claimout()" id="dbl">OhhBy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime eum, quia vero perspiciatis provident odit odio nemo et blanditiis alias tempore tempora itaque assumenda magnam, voluptatibus neque aperiam aliquam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti molestiae ea vel, dolor asperiores possimus omnis quod corporis aperiam accusantium commodi earum  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minima pariatur eligendi sed neque quis, eum non sint quidem quasi earum ea saepe harum illum voluptas quas voluptates id tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam quia enim excepturi, officiis perferendis labore! Cumque officiis illo a beatae dolore deleniti, at, vitae aliquid reprehenderit eum pariatur! Labore? inventore repellat nulla. Eius non impedit possimus.</p>
+    <p onmouseover="claim()" onmouseout="claimout()" id="m1">OnMouse</p>
+    <img id="im" src="666.PNG"> 
+    <Script>
+  /*  function clickme(){
+       document.getElementById("text").innerHTML="Changed";
+       
+
+       
+       document.getElementById("im").src="";
+//        document.getElementById("btn").innerHTML="WoW"; // innerText
+    }
+   
+    function hello(){
+    
+            alert("KeyPressed waspressed");
+    }
+   /*   function claimout(){
+        document.getElementById("dbl").innerHTML="Yeah its fine";
+        document.getElementById("m1").innerHTML="MouseEven";
+       document.getElementById("m1").innerHTML="MouseOut"
+    }
+    /*function clickme(){
+       // document.write("Well")
+    }  */
+
+   // Images
+   /*
+   <!DOCTYPE html>
+<html>
+<body>
+
+<img src="klematis.jpg"   id="ig" alt="flower" width="150" height="113">
+<img src="klematis2.jpg"   id="ig" alt="flower" width="152" height="128">
+<img src="smiley.gif"   id="ig" alt="Smiley face" width="42" height="42">
+
+<p>Click the button to display the URL of the first image (index 0) in the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+function myFunction() {
+  //var x = document.images[1].src;
+  var x=document.querySelectorAll("#ig")[0].src;
+  document.getElementById("demo").innerHTML = x;
+}
+
+img1
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="klematis.jpg" id="ig" alt="flower" width="150" height="113">
+<img src="klematis2.jpg"  id="ig" alt="flower" width="152" height="128">
+<img src="smiley.gif"  id="ig" alt="Smiley face" width="42" height="42">
+
+<p>Click the button to display the number of images in the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(){
+var l=document.querySelectorAll("#ig").length;
+document.getElementById("demo").innerHTML=l;
+//function myFunction() {
+  //var x = document.images.length;
+  //document.getElementById("demo").innerHTML = x;
+//}
+}
+
+*/   
+ </Script>   -->
+<body>
+    <div id="outer" class="styleClass">outerr
+        <div id="inner"  class="styleClass">Inner
+        <div id="last"  class="styleClass">INOut
+
+        </div>
+    </div></div>
+    <script>
+        //Event Capturing  InnErDiv and OuterDiv
+      /*  
+        var d1=document.getElementById("inner").addEventListener("click", function(){
+            this.style.border="3px solid red"
+             alert(this.getAttribute("id") +" You Clickd On Inner Div");
+        });
+
+        var d2=document.getElementById("outer").addEventListener("click", function(){
+            this.style.border="3px solid blue"
+            alert(this.getAttribute("id") +" You Clickd On Outer Div")
+            
+                });
+
+                var d3=document.getElementById("last").addEventListener("click", function(){
+            this.style.border="3px solid green"
+            alert(this.getAttribute("id") +" You Clickd On InnOuter Div")
+            
+                });      */
+               
+             //EventBuilding
+
+           /*  var x=document.getElementsByTagName("div");
+                for(var i=0;i<x.length; i++){
+                    x[i].addEventListener("click", function(){
+                        this.style.border="2px dotted red";
+                        alert(this.getAttribute("id")+ " this the Event")
+                    })
+                }     */
+
+                    
+       
+
+      //EventBuilding
+
+/*   var x=document.getElementsByTagName('div');
+for(var i=0;i<x.length; i++){
+    x[i].onclick=function(){
+        this.style.borderColor= "red" ;
+        alert(this.getAttribute("id") + "Color Changed")
+         , false}
+}  */
+
+//EventBublingStopping
+
+       /*  var x=document.getElementsByTagName('div');
+            for(var i=0;i<x.length; i++){
+            x[i].onclick=function(){
+            event=event || window.event; 
+            if(event.stopPropagation)
+            {
+            event.stopPropagation();
+            }else{
+            event.cancelBubble=true;
+        }
+        this.style.borderColor= "red" ;
+        alert(this.getAttribute("id") + "Color Changed")
+         
+         }
+}   */
+
+//javascrript 
+//class list Methods
+
+//add(class1, class2...)  ,remove(class1, class2...) , toggle(class), contain(class), item(index),  length................
+
+//Add
+//var a=document.getElementById("outer").classList.add("class1", "class2");
+//var b1=document.getElementById("outer").className="class3 class4";
+
+//Remove
+//var remove=document.getElementById("outer").classList.remove("class2")
+//var ac=document.getElementById("outer").classList.length;
+
+//var ac=document.getElementById("outer").className;
+//var ac=document.getElementById("outer").classList;
+//var t=document.getElementById("outer").addEventListener("click", funn1);
+//function funn1(){
+  //  var add=document.getElementById("outer").classList.toggle("any");
+//  }
+
+//Toggle
+//  var a=document.getElementById("outer").classList.toggle("any");
+//  var ac=document.getElementById("outer").classList;
+
+//var bc=document.getElementById("outer").className;
+//  console.log(ac)
+//console.log(bc);
+
+//Item
+// var d=document.getElementById("outer").classList.item(1);  
+ // console.log(d)
+//var bc=document.getElementById("outer").classList;
+//console.log(bc)
+
+//Contains
+// var c=document.getElementById("outer").classList.contains("any"); //("xyz")
+// console.log(c)
+ </script>
+
+ 
+  <!--  <div id="d1">The Content</div>
+        <button id="btn" onclick="myfun1()">Click
+        </button>  
+    /*function myfun1(){
+
+    document.getElementById("d1").setAttribute("style", "height:10%; width:60%; background-color: orange; margin:10px; padding:15px; text-align:center");
+    document.getElementById("d1").innerHTML=" <h1>My Div is different</h1>";
+}  */  -->
+
+
+ 
+
+</body>
+</html>

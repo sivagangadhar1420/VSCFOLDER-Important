@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KeyMatrices</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+      body{
+          background-color: #ffffff;
+      }
+      .container{
+          margin-top: 120px;
+          margin-left: -20px;    
+      }
+      .container body{
+          background-colorf1:#f1f1;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+                <li><a href="#" style="font-size: 18px;">Key Matrices</a></li>
+                <li><a href="#" style="font-size: 18px;">Employee Injuries</a></li>
+                <li><a href="#" style="font-size: 18px;">Incident Analysis</a></li>
+                <li><a href="#" style="font-size: 18px;">Hazards, Inspections, & Actions</a></li>
+                <li><a href="#" style="font-size: 18px;">Observations</a></li>
+                <li><a href="#" style="font-size: 18px;">Training</a></li>
+                <div class="col-md-4">
+                   <div class="col-lg-20">
+                        <div id = "draggable" >
+                           <div id ="sortable" >
+                 <div class="panel panel-default" >
+                     <div id="mydiv">
+                  <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - Average Time Lag in Reporting</b><a href="#">
+                     <span class="glyphicon glyphicon-cog"></span></a></div> <div class="panel-body"> <img src=jkd/rdChart2.png width="220px">   
+                            </div>
+                            </div></div></div></div>
+</div>
+
+                                        
+                            <div class="col-md-4">
+                                 <div class="col-lg-20">
+                                    <div id = "draggable1" >
+                                       <div id = "sortable1">
+                                    <div class="col-md-4">
+                                    <div class="panel panel-default ">
+<div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - Total Case Incidents Rates</b><a href="#">
+   <span class="glyphicon glyphicon-cog"></span></a></div>
+                             <div class="panel-body"> <img src=jkd/meter.png>   
+                                        </div>
+                                        </div></div></div></div>
+
+                                    <div class="row">
+                                            <div id = "draggable2" >
+                                               <div id = "sortable2">
+                                            <div class="col-md-4">
+                                                <div class="panel panel-default ">
+                                                      <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Corrective Actions - Corrective Actions By orignating Type</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                                                      <div class="panel-body"> <img src=jkd/graph1.png>   
+                                                    </div>
+                                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show/Hide Data</button>
+                <div id="demo" class="collapse">
+                <table class="table">
+                     <thead style="background-color: #d2d2d2;">
+                  <tr>
+                        <th>Type</th>
+                        <th>Number Of Corrective Actions</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                       <td style="font-size: 13px;"><a href="#">Hazard</td></a>
+                         <td style="font-size: 13px;">31</td>
+                       </tr>
+                        <tr>
+                     <td style="font-size: 13px;"><a href="#">IH-Industrial Hygiene Sampling</td></a>
+                        <td style="font-size: 13px;">3</td>
+                        </tr>
+                        <tr>
+                        <td style="font-size: 13px;"><a href="#">Qualitative Exposure Assessment</td></a>
+                        <td style="font-size: 13px;">1</td>
+                      </tr>
+                      <tr>
+                   <td style="font-size: 13px;"><a href="#">Incident</td></a>
+                     <td style="font-size: 13px;">135</td>
+                     </tr>
+                     <tr>
+                      <td style="font-size: 13px;"><a href="#">Inspections</td></a>
+                        <td style="font-size: 13px;">212</td>
+                                 </tr>
+                            <tr>
+                        <td style="font-size: 13px;"><a href="#">Job Safety Analysis</td></a>
+                            <td style="font-size: 13px;">8</td>
+                                    </tr>
+                                 <tr>
+                            <td style="font-size: 13px;"><a href="#">Observation</td></a>
+                               <td style="font-size: 13px;">11</td>
+                               </tr>
+                               <tr>
+                                    <td style="font-size: 13px;"><a href="#">Unlinked</td></a>
+                                      <td style="font-size: 13px;">30</td>
+                                    </tr><tr>
+                                          <td style="background-color: #d2d2d2;" style="font-size: 13px;" >TOTAL Number Of Corrective Actions</td>
+                                            <td style="background-color: #d2d2d2;" style="font-size: 13px;" >431</td>
+                                          </tr>
+                             </tbody>
+                    </table>
+                                                    </div></div></div></div></div></div>
+                                                    
+         <div class="col-md-4">
+             <div id = "draggable3">
+                <div id = "sortable3">
+            <div class="panel panel-default ">
+            <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - OSHA Recordable versus Lost Time Incidents</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                 <div class="panel-body"> <img src=jkd/graph.png>   
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Show/Hide Data</button>
+                <div id="demo1" class="collapse">
+                <table class="table">
+                     <thead style="background-color: #d2d2d2;">
+                  <tr>
+                        <th>Incident Type</th>
+                        <th>Number Of Incidents</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                       <td style="font-size: 13px;"><a href="#">Total Incidents</td></a>
+                         <td style="font-size: 13px;">526</td>
+                       </tr>
+                           <tr>
+                          <td style="font-size: 13px;"><a href="#">OSHA Recordable</td></a>
+                            <td style="font-size: 13px;">132</td>
+                          </tr>
+                              <tr>
+                             <td style="font-size: 13px;"><a href="#">Lost Time</td></a>
+                               <td style="font-size: 13px;">103</td>
+                             </tr>
+                             </tbody>
+                    </table>
+            </div></div></div></div></div>
+
+         <div class="col-md-4">
+                <div id = "draggable4">
+                   <div id = "sortable4">
+             <div class="panel panel-default ">
+             <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Corrective Actions - Persent Completed On Time</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                 <div class="panel-body"> <img src=jkd/barometer.png>
+                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">Show/Hide Data</button>
+                        <div id="demo4" class="collapse">
+                              <table class="table">
+                                   <thead style="background-color: #d2d2d2;">
+                                <tr>
+                                      <th>Corrective Actions</th>
+                                      <th>Total</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                     <td style="font-size: 13px;"><a href="#">Identified Corrective Actions</td></a>
+                                       <td style="font-size: 13px;">431</td>
+                                     </tr>
+                                      <tr>
+                                   <td style="font-size: 13px;"><a href="#">Open Corrective Actions</td></a>
+                                      <td style="font-size: 13px;">191</td>
+                                      </tr>
+                                      <tr>
+                                      <td style="font-size: 13px;"><a href="#">Overdue Corrective Actions</td></a>
+                                      <td style="font-size: 13px;">128</td>
+                                    </tr>
+                                    <tr>
+                                 <td style="font-size: 13px;"><a href="#">Completed Corrective Actions</td></a>
+                                   <td style="font-size: 13px;">133</td>
+                                   </tr>
+                                   <tr>
+                                    <td style="font-size: 13px;"><a href="#">Corrective actions scheduled For Completion by today</td></a>
+                                      <td style="font-size: 13px;">358</td>
+                                               </tr>
+                                          <tr>
+                                      <td style="font-size: 13px;"><a href="#">Corrective Actions Completed On Time</td></a>
+                                          <td style="font-size: 13px;">118</td>
+                                                  </tr>
+               </tbody>
+            </table>
+                     </div></div></div></div></div></div>   
+
+        <div class="col-md-4">
+                <div id = "draggable5">
+                   <div id = "sortable5">
+            <div class="panel panel-default ">
+             <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - Days Without an Employee Injury</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                 <div class="panel-body"> <img src=jkd/meter1.png>   
+              </div>
+         </div></div></div></div>
+
+         <div class="col-md-4">
+                <div id = "draggable6">
+                   <div id = "sortable6">
+                <div class="panel panel-default ">
+                 <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - Incidents By Root Cause</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                     <div class="panel-body"> <img src=jkd/circle.png>
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Show/Hide Data</button>
+                        <div id="demo2" class="collapse">
+                              <table class="table">
+                                   <thead style="background-color: #d2d2d2;">
+                                <tr>
+                                      <th>Root Cause</th>
+                                      <th>Number Of Incidents</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                     <td style="font-size: 13px;"><a href="#">At Risk Behaviour*</td></a>
+                                       <td style="font-size: 13px;">4</td>
+                                     </tr>
+                                      <tr>
+                                   <td style="font-size: 13px;"><a href="#">Inadequate Tools or Equipment-Equipment Not Suitable For Task</td></a>
+                                      <td style="font-size: 13px;">3</td>
+                                      </tr>
+                                      <tr>
+                                      <td style="font-size: 13px;"><a href="#">Inadequate Tools or Equipment-Tools Not Available</td></a>
+                                      <td style="font-size: 13px;">2</td>
+                                    </tr>
+                                    <tr>
+                                 <td style="font-size: 13px;"><a href="#">Inadequate Tools or Equipment-Tools Not Suitable For Task</td></a>
+                                   <td style="font-size: 13px;">3</td>
+                                   </tr>
+                                   <tr>
+                                    <td style="font-size: 13px;"><a href="#">Inadequate Tools or Equipment-Tool Or Equipment Failure Not Related To PM</td></a>
+                                      <td style="font-size: 13px;">4</td>
+                                               </tr>
+                                          <tr>
+                                      <td style="font-size: 13px;"><a href="#">Inadequate Tools or Equipment-Tool Providend Not Functional</td></a>
+                                          <td style="font-size: 13px;">8</td>
+                                                  </tr>
+                                               <tr>
+                                          <td style="font-size: 13px;"><a href="#">Machine/Equipment-Poor Equipment or Tool Placement</td></a>
+                                             <td style="font-size: 13px;">6</td>
+                                             </tr>
+                              <tr>
+                              <td style="font-size: 13px;"><a href="#">Machine/Equipment-Incorrect Tool Selection</td></a>
+                            <td style="font-size: 13px;">1</td>
+                               </tr>
+                              <tr>
+               <td style="font-size: 13px;"><a href="#">Machine/Equipment-Poor Maintenance Or Design</td></a>
+                   <td style="font-size: 13px;">6</td>
+                        </tr>
+                     <tr>
+               <td style="font-size: 13px;"><a href="#">Management System-Lack Of Process</td></a>
+                   <td style="font-size: 13px;">5</td>
+                        </tr>
+                     <tr>
+          <td style="font-size: 13px;"><a href="#">Management System-Improper/Inadaquate Training</td></a>
+                     <td style="font-size: 13px;">10</td>
+                     </tr>
+                  <tr>
+         <td style="font-size: 13px;"><a href="#">Materials-Defective Raw Material</td></a>
+                     <td style="font-size: 13px;">1</td>
+                     </tr>
+                  <tr>
+             <td style="font-size: 13px;"><a href="#">Materials-Lack Of Raw Materials</td></a>
+                  <td style="font-size: 13px;">2</td>
+                </tr>
+                <tr>
+                     <td style="font-size: 13px;"><a href="#">Materials-Wrong Type For Job</td></a>
+                          <td style="font-size: 13px;">2</td>
+                        </tr>
+                        <tr>
+                              <td style="font-size: 13px;"><a href="#">Other</td></a>
+                                   <td style="font-size: 13px;">1</td>
+                                 </tr>
+                                 <tr>
+                                       <td style="font-size: 13px;"><a href="#">Rushing</td></a>
+                                            <td style="font-size: 13px;">2</td>
+                                          </tr>
+                                          <tr>
+                                                <td style="font-size: 13px;"><a href="#">Slippery Walking Surfaces</td></a>
+                                                     <td style="font-size: 13px;">2</td>
+                                                   </tr>
+                                                   <tr>
+                                                         <td style="font-size: 13px;"><a href="#">Unsafe Action</td></a>
+                                                              <td style="font-size: 13px;">1</td>
+                                                            </tr>
+          <tr>
+         <td style="background-color: #d2d2d2;" style="font-size: 13px;" >TOTAL Number Of Incidents</td>
+                   <td style="background-color: #d2d2d2;" style="font-size: 13px;" >63</td>
+                  </tr>
+               </tbody>
+            </table>
+                     </div></div></div></div></div></div>   
+
+             <div class="col-md-4">
+                    <div id = "draggable7">
+                       <div id = "sortable7">
+                    <div class="panel panel-default ">
+                     <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Harzads - Harads By Type</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                         <div class="panel-body"> <img src=jkd/circle1.png>
+                           <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Show/Hide Data</button>
+                        <div id="demo3" class="collapse">
+                              <table class="table">
+                                   <thead style="background-color: #d2d2d2;">
+                                <tr>
+                                      <th>Type</th>
+                                      <th>Number Of Harzards</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                     <td style="font-size: 13px;"><a href="#">Compressed Gas</td></a>
+                                       <td style="font-size: 13px;">7</td>
+                                     </tr>
+                                      <tr>
+                                   <td style="font-size: 13px;"><a href="#">Electrical</td></a>
+                                      <td style="font-size: 13px;">13</td>
+                                      </tr>
+                                      <tr>
+                                      <td style="font-size: 13px;"><a href="#">Electrocution</td></a>
+                                      <td style="font-size: 13px;">6</td>
+                                    </tr>
+                                    <tr>
+                                 <td style="font-size: 13px;"><a href="#">Fall Hazard</td></a>
+                                   <td style="font-size: 13px;">13</td>
+                                   </tr>
+                                   <tr>
+                                    <td style="font-size: 13px;"><a href="#">Fall Protection</td></a>
+                                      <td style="font-size: 13px;">9</td>
+                                               </tr>
+                                          <tr>
+                                      <td style="font-size: 13px;"><a href="#">Fire</td></a>
+                                          <td style="font-size: 13px;">1</td>
+                                                  </tr>
+                                               <tr>
+                                          <td style="font-size: 13px;"><a href="#">Hot Work</td></a>
+                                             <td style="font-size: 13px;">4</td>
+                                             </tr>
+                              <tr>
+                              <td style="font-size: 13px;"><a href="#">Housekeeping</td></a>
+                            <td style="font-size: 13px;">4</td>
+                               </tr>
+                              <tr>
+               <td style="font-size: 13px;"><a href="#">Labeling</td></a>
+                   <td style="font-size: 13px;">1</td>
+                        </tr>
+                     <tr>
+               <td style="font-size: 13px;"><a href="#">Lighting</td></a>
+                   <td style="font-size: 13px;">4</td>
+                        </tr>
+                     <tr>
+          <td style="font-size: 13px;"><a href="#">Machine Guarding</td></a>
+                     <td style="font-size: 13px;">5</td>
+                     </tr>
+                  <tr>
+         <td style="font-size: 13px;"><a href="#">Mechanical</td></a>
+                     <td style="font-size: 13px;">4</td>
+                     </tr>
+                  <tr>
+             <td style="font-size: 13px;"><a href="#">Other</td></a>
+                  <td style="font-size: 13px;">3</td>
+                </tr>
+                <tr>
+                     <td style="font-size: 13px;"><a href="#">PPE</td></a>
+                          <td style="font-size: 13px;">3</td>
+                        </tr>
+                        <tr>
+                              <td style="font-size: 13px;"><a href="#">Ramp</td></a>
+                                   <td style="font-size: 13px;">1</td>
+                                 </tr>
+                                 <tr>
+                                       <td style="font-size: 13px;"><a href="#">Smoke</td></a>
+                                            <td style="font-size: 13px;">2</td>
+                                          </tr>
+                                          <tr>
+                                                <td style="font-size: 13px;"><a href="#">Walking/Working Surfaces</td></a>
+                                                     <td style="font-size: 13px;">6</td>
+                                                   </tr>
+          <tr>
+         <td style="background-color: #d2d2d2;" style="font-size: 13px;" >TOTAL Number Of Harzads</td>
+                   <td style="background-color: #d2d2d2;" style="font-size: 13px;" >86</td>
+                  </tr>
+               </tbody>
+            </table>
+                     </div></div></div></div></div></div>   
+
+                              <div class="col-md-4">
+                                <div id = "draggable8">
+                                   <div id = "sortable8">
+                                   <div class="panel panel-default ">
+                                      <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - Employee Injurious By Area Of Body</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                                        <div class="panel-body"> <img src=jkd/circle2.png>
+                                          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">Show/Hide Data</button>
+                        <div id="demo6" class="collapse">
+                                          <table class="table">
+                                             <thead style="background-color: #d2d2d2;">
+                                          <tr>
+                                                <th>Main Body Part</th>
+                                                <th>Number Of Incidents</th>
+                                                
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                               <tr>
+                                              <td style="font-size: 13px;"><a href="#">Arm Upper-Left</td></a>
+                                                <td style="font-size: 13px;">73</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Arm Upper-Right</td></a>
+                                                 <td style="font-size: 13px;">56</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Back-Lower</td></a>
+                                                 <td style="font-size: 13px;">7</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Back-Upper</td></a>
+                                                 <td style="font-size: 13px;">2</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Chest or Collar Area</td></a>
+                                                 <td style="font-size: 13px;">4</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Coxis (Buttocks)</td></a>
+                                                 <td style="font-size: 13px;">1</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Ear-Left</td></a>
+                                                 <td style="font-size: 13px;">1</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Ear-Right</td></a>
+                                                 <td style="font-size: 13px;">2</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Ears-Both</td></a>
+                                                 <td style="font-size: 13px;">1</td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="font-size: 13px;"><a href="#">Eye-Left</td></a>
+                                                 <td style="font-size: 13px;">3</td>
+                                              </tr>
+                                              <tr>
+                                                <td style="font-size: 13px;"><a href="#">Eye-Right</td></a>
+                                                <td style="font-size: 13px;">3</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Eyes-Both</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Face-Chain/Jaw</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Face-Left</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Face-Mouth</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Face-Right</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Left-1st(Index)</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Left-2nd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Left-3rd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Left-4th</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Left-Thumb</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Right-1st(Index)</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Right-2nd</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Right-3rd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Right-4th</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Finger-Right-Thumb</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Forearm-Left</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Forearm-Right-</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Forearms-Both</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Groin</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Hand-Left</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Hand-Left-Palm</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Hand-Right</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Hand-Right-Palm</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Head</td></a>
+                                                <td style="font-size: 13px;">41</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Knee-Left</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">knee-Right</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Knees-Both</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Leg Lower-Left</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Leg Lower-Right</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Leg Upper-Left</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">leg Upper-Right</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Multiple Body parts-Other </td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Neck</td></a>
+                                                <td style="font-size: 13px;">3</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Nose</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Shoulder-Left</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Shoulder-Right</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Shoulders-Both</td></a>
+                                                <td style="font-size: 13px;">2</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Left-1st(Big)</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Left-2nd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Left-3rd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Left-4th</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Left-5th</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Right-1st(Big)</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Right-2nd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Right-3rd</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Right-4th</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Toe-Right-5th</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Upper Extremities</td></a>
+                                                <td style="font-size: 13px;">3</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Wrist-Left</td></a>
+                                                <td style="font-size: 13px;">7</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Wrist-Right</td></a>
+                                                <td style="font-size: 13px;">7</td>
+                                             </tr>
+                                             <tr>
+                                                <td style="font-size: 13px;"><a href="#">Wrist-Both</td></a>
+                                                <td style="font-size: 13px;">1</td>
+                                             </tr>
+                                              <tr>
+                                                 <td style="background-color: #d2d2d2;" style="font-size: 13px;">Total Number Of Incidents</td>
+                                                 <td style="background-color: #d2d2d2;" style="font-size: 13px;">272</td>
+                                              </tr>
+                                              
+                                            </tbody>
+                                          </table>
+                                             
+                                    </div>
+                               </div></div></div></div></div></div>    
+                                  
+
+                     <div class="col-md-4">
+                            <div id = "draggable9">
+                               <div id = "sortable9">
+                            <div class="panel panel-default ">
+                             <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents - Employee Injurious - Top 10 Locations</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                                 <div class="panel-body"> 
+                                       <table class="table">
+                                       <thead style="background-color: #d2d2d2;">
+                                    <tr>
+                                          <th>Location</th>
+                                          <th>Number Of Incidents</th>
+                                          
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                         <tr>
+                                        <td style="font-size: 13px;"><a href="#">Building , Water & Infrastructure</td></a>
+                                          <td style="font-size: 13px;">211</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">Treatement Facility</td></a>
+                                           <td style="font-size: 13px;">45</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">Atlanta</td></a>
+                                           <td style="font-size: 13px;">18</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">6311</td></a>
+                                           <td style="font-size: 13px;">13</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">Mississippi Main</td></a>
+                                           <td style="font-size: 13px;">12</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">New York City</td></a>
+                                           <td style="font-size: 13px;">11</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">test facility LA</td></a>
+                                           <td style="font-size: 13px;">10</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">The Ware House</td></a>
+                                           <td style="font-size: 13px;">10</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">Oralndo</td></a>
+                                           <td style="font-size: 13px;">8</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="font-size: 13px;"><a href="#">CJs Demo Facility</td></a>
+                                           <td style="font-size: 13px;">6</td>
+                                        </tr>
+                                        <tr>
+                                           <td style="background-color: #d2d2d2;" style="font-size: 13px;">Total Number Of Incidents</td>
+                                           <td style="background-color: #d2d2d2;" style="font-size: 13px;">344</td>
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                       
+                              </div>
+                         </div></div></div></div></div></div>
+
+                         <div class="col-md-4">
+                                <div id = "draggable10">
+                                   <div id = "sortable10">
+                                <div class="panel panel-default ">
+                                 <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Inspections - Locations With Most Deficiencies By Persent</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                                     <div class="panel-body">
+                                          <table class="table">
+                                                <thead style="background-color: #d2d2d2;"> 
+                                                      <tr>
+                                                            <th>Facility</th>
+                                                            <th>% Deficiencies</th>
+                                                            
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                           <tr>
+                                                              <td></td>
+                                                              <td style="font-size: 13px;">86</td>
+                                                           </tr>
+                                                           <tr>
+                                                          <td style="font-size: 13px;"><a href="#">Administrative Center</td></a>
+                                                            <td style="font-size: 13px;">62</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">Treatement Facility</td></a>
+                                                             <td style="font-size: 13px;">62</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">The Warehouse</td></a>
+                                                             <td style="font-size: 13px;">57</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">KYLEFACILITY</td></a>
+                                                             <td style="font-size: 13px;">50</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">CJs Demo Facility</td></a>
+                                                             <td style="font-size: 13px;">48</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">Atlanta</td></a>
+                                                             <td style="font-size: 13px;">45</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">ALC</td></a>
+                                                             <td style="font-size: 13px;">43</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">C-Freedom</td></a>
+                                                             <td style="font-size: 13px;">9</td>
+                                                          </tr>
+                                                          <tr>
+                                                             <td style="font-size: 13px;"><a href="#">Project 123456</td></a>
+                                                             <td style="font-size: 13px;">6</td>
+                                                          </tr>   
+                                                        </tbody>
+                                                      </table>  
+                                  </div>
+                             </div></div></div></div>
+
+                             <div class="col-md-4">
+                                 <div id = "draggable11">
+                                    <div id = "sortable11"> 
+                                       <div id=
+                                 <div class="panel panel-default ">
+                                  <div class="panel-content" style="font-size: 20px;">&nbsp;<b>Incidents-Employee Injury Pyramid Report</b><a href="#"><span class="glyphicon glyphicon-cog"></span></a></div>
+                                      <div class="panel-body"> <img src=jkd/circle1.png>
+                                       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">Show/Hide Data</button>
+                        <div id="demo5" class="collapse">
+                              <table class="table">
+                                   <thead style="background-color: #d2d2d2;">
+                                <tr>
+                                      <th>Incident Type</th>
+                                      <th>Number Of Incidents</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                     <td style="font-size: 13px;"><a href="#">Deaths</td></a>
+                                       <td style="font-size: 13px;">1</td>
+                                     </tr>
+                                      <tr>
+                                   <td style="font-size: 13px;"><a href="#">Lost Time Incidents</td></a>
+                                      <td style="font-size: 13px;">102</td>
+                                      </tr>
+                                      <tr>
+                                      <td style="font-size: 13px;"><a href="#">All Other OSHA Recordable Incidents</td></a>
+                                      <td style="font-size: 13px;">29</td>
+                                    </tr>
+                                    <tr>
+                                 <td style="font-size: 13px;"><a href="#">All Other Employee Injuries</td></a>
+                                   <td style="font-size: 13px;">242</td>
+                                   </tr>
+                                   <tr>
+                                    <td style="font-size: 13px;"><a href="#">All Other Incidents</td></a>
+                                      <td style="font-size: 13px;">152</td>
+                                               </tr>
+               </tbody>
+            </table>
+                     </div></div></div></div></div></div>   </ul>
+                                                              
+<script>
+   $(function() {
+            $( "#sortable-1" ).sortable();
+         });
+     $(function() {
+     $( "#draggable" ).draggable();
+        });
+     $(function() {
+  $( "#draggable1" ).draggable();
+     });
+     $(function() {
+  $( "#draggable2" ).draggable();
+     });
+     $(function() {
+  $( "#draggable3" ).draggable();
+     });
+     $(function() {
+  $( "#draggable4" ).draggable();
+     });
+     $(function() {
+  $( "#draggable5" ).draggable();
+     });
+     $(function() {
+  $( "#draggable6" ).draggable();
+     });
+     $(function() {
+  $( "#draggable7" ).draggable();
+     });
+     $(function() {
+  $( "#draggable8" ).draggable();
+     });
+     $(function() {
+  $( "#draggable9" ).draggable();
+     });
+     $(function() {
+  $( "#draggable10" ).draggable();
+     });
+     $(function() {
+  $( "#draggable11" ).draggable();
+     });
+ </script>
+ <script>
+      $( function() {
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+        placeholder: "ui-sortable-placeholder"
+      } );
+      $( function() {
+        $( "#sortable1" ).sortable();
+        $( "#sortable1" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable2" ).sortable();
+        $( "#sortable2" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable3" ).sortable();
+        $( "#sortable3" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable4" ).sortable();
+        $( "#sortable4" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable5" ).sortable();
+        $( "#sortable5" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable6" ).sortable();
+        $( "#sortable6" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable7" ).sortable();
+        $( "#sortable7" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable8" ).sortable();
+        $( "#sortable8" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable9" ).sortable();
+        $( "#sortable9" ).disableSelection();
+      } ); 
+      $( function() {
+        $( "#sortable10" ).sortable();
+        $( "#sortable10" ).disableSelection();
+      } );
+      $( function() {
+        $( "#sortable11" ).sortable();
+        $( "#sortable11" ).disableSelection();
+      } );
+      </script>
+      
+        </body>
+      </html>                                                   
+
+                

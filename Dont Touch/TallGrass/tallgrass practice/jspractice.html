@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            p
+            {
+                border:5px solid red;
+                height: 200px;
+                width: 600px;
+                text-align: center;
+                padding-top: 5em;
+                font-size: 30px;
+            
+            }
+        </style>
+    </head>
+<body>
+<p onmouseenter='fun1()' onmouseleave='fun2()' id="p1">
+    Welcome to JS1
+</p>
+<p onmouseover="fun3()" onmouseout="fun31()" id="p2">
+    Welcome to JS2
+</p>
+<p onclick="fun4()" id="p3">
+        Welcome to JS3
+</p>
+<script>
+    function fun1()
+    {
+        document.getElementById('p1').innerHTML='Mouse was entered'
+        document.getElementById('p1').style.color='green'
+        document.getElementById('p1').style.backgroundColor='skyblue'
+    }
+    function fun2()
+    {
+        document.getElementById('p1').innerHTML='Mouse was leaved'
+        document.getElementById('p1').style.color='orange'
+        document.getElementById('p1').style.backgroundColor='lightgreen'
+    }
+    function fun31()
+    {
+        document.getElementById('p2').innerHTML='Mouse Over'
+        document.getElementById('p2').style.color='white'
+        document.getElementById('p2').style.backgroundColor='black'
+    }
+     function fun3()
+    {
+        document.getElementById('p2').innerHTML='thank u'
+        document.getElementById('p2').style.color='black'
+        document.getElementById('p2').style.backgroundColor='white'
+    }
+    function fun4()
+    {
+        document.getElementById('p3').innerHTML='BYEEEEE'
+    }
+</script>
+</body>
+</html>

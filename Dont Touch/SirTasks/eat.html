@@ -1,0 +1,37 @@
+<html>
+<body>
+    <script>
+     var human=
+     {
+            //data
+            name:'Ajay',
+            age:22,
+            height:5.6,
+            weight:56,
+            gender:'male',
+            //functions
+            eating:function(item)
+            {
+                console.log(this.name+' eating '+item+' food')
+            },
+            sleeping:function(hours)
+            {
+                console.log(this.name+' sleeping '+hours+' hours per day')
+            },
+            walking:function(dist)
+            {
+                console.log(this.name+' walks '+dist+' kms per day')
+            }
+     };
+     //accessing
+     console.log(human.name)
+     console.log(human.age)
+     console.log(human.height)
+     console.log(human.weight)
+     console.log(human.gender)
+     human.eating('Chiken Biryani')
+     human.sleeping(8)
+     human.walking(4)
+    </script>
+</body>
+</html>

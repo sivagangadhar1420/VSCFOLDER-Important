@@ -1,0 +1,87 @@
+    
+<html>
+<head>
+<style>
+    *
+    {
+        margin: 5px;padding: 5px;border: 1px solid greenyellow;
+    }
+    .s1
+    {
+        border: 3px solid red;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="d1">
+    <div id="x">
+        <ul>
+            <li>
+               <span id="s1">span</span>
+            </li>
+        </ul>   
+    </div>
+              
+    <div id="y">
+        <p>
+            <span id="s2">span</span>
+        </p> 
+    </div>    
+<html>
+<head>
+<style>
+    *
+    {
+        margin: 5px;padding: 5px;border: 1px solid greenyellow;
+    }
+    .s1
+    {
+        border: 3px solid red;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="d1">
+    <div id="x">
+        <ul>
+            <li>
+               <span id="s1">span</span>
+            </li>
+        </ul>   
+    </div>
+              
+    <div id="y">
+        <p>
+            <span id="s2">span</span>
+        </p> 
+    </div>
+    <div id="z">
+           <span id="s3">span</span>
+          
+    </div>
+</div>
+<script>
+    $(document).ready(function()
+    {
+        //1.Up the DOM Tree:
+        //$('#s1').parent().addClass('s1')
+        $('ul').parents().addClass('s1')
+        // $('ul').parentsUntil('#d1').addClass('s1')
+        //2.Traversing Down the DOM Tree:
+        //$('#y').children().addClass('s1')
+        //$('#d1').find('#s1').addClass('s1')
+        //3.Traversing Sideways in The DOM Tree:
+        //$('#y').siblings().addClass('s1')
+        //$('#y').prev().addClass('s1')
+        //$('#z').prevAll().addClass('s1')
+        //$('#z').prevUntil('#x').addClass('s1')
+        //$('#y').next().addClass('s1')
+        //$('#x').nextAll().addClass('s1')
+        //$('#z').nextUntil('#x').addClass('s1')
+    });
+</script>
+</body>
+</html>
+    

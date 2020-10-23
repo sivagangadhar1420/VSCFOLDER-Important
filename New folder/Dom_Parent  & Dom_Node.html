@@ -1,0 +1,369 @@
+<html id="html" lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    #outer{
+        height:300px;
+        width: 500px;
+       background-color: orange;
+       text-align: center;
+       
+       
+       }
+
+    #inner{
+        height:200px;
+        width:450px;
+    background-color: green;
+        margin-top: 5px;
+       margin-left:25px;
+       /* margin: 10 00 00 180; positions   */
+        position:relative;
+        text-align: center;
+        
+        
+            }
+
+    .d{
+        text-align: center;
+       padding: 10px;  
+       float: left;
+       margin:2px;
+       position: relative;;
+       margin-left: 30px;
+       margin-top: 25px;
+       
+       
+ }
+    #d{
+        height:20px;
+        width: 30px;
+        float: left;
+ }
+    #a{
+     height:20px;
+        width: 30px;
+        background-color: grey;
+        float: left;
+       }
+   
+    #b{
+        height:20px;
+        width: 30px;
+        background-color: grey;
+         float: left;
+   
+    }
+    #c{
+        height:20px;
+        width: 30px;
+        background-color: grey;
+        float: left;
+   
+    }
+    #d{
+        height:20px;
+        width: 30px;
+        background-color: grey;
+         float: left;
+   }
+   
+    #e{
+        height:20px;
+        width: 30px;
+         background-color:white;
+         float: left;
+         }
+       
+      .inr{
+          height: 500px;
+          width:50%;
+          background-color: orange;
+      }
+      
+    </style>
+</head>
+<body class="cl">
+  <!--  <div id="d">
+        <p id="abc" class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nostrum officia minima tempore 
+            repudiandae quo quod numquam a hic. Quo, debitis. Nisi neque sunt ab voluptatum obcaecati, 
+            placeat quibusdam facilis!</p>
+        </div>  -->
+        <ul id="u">
+            <li>Water</li>
+            <li>hotWater</li>
+            <li>HotWater</li>
+            <li>SweetWater</li>
+        </ul>
+        <ul id="u1" class="uc">
+            <li>Water</li>
+            <li>Water</li>
+            <li>fruits</li>
+            <li>Dryfruits</li>
+        </ul>
+        <button onclick="funn1()">Click</button>
+        <button onclick="newWindow()">NewWindow</button>
+        <button onclick="closewindow()">CloseWindow</button>
+        
+        <button onclick="movewindow()">MoveWindow</button>
+        <button onclick="scrollwindow()" style="position: fixed; background-color: blue;">Scroll</button>
+        <button onclick="newwebsite()" style="margin: 20px;;">Newwebsite</button>
+        <button onclick="backwardFunction()">BackWard</button>
+        <button onclick="forwardFunction()">ForWard</button>
+        <button onclick="toggleFunction()">Toogle</button>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+             aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+             eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+              quibusdam? Laudantium quibusdam dolorem voluptaLorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+              aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+              eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+               quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+               aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+               eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                 quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                 aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                 eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                  quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                  aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                  eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                   quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                   aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                   eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                    quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                    aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                    eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                     quibusdam? Laudantium quibusdam dolorem voluptateLorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                     aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                     eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                      quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                      aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                      eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                       quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                       aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                       eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                        quibusdam? Laudantium quibusdam dolorem voluptate quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur sapiente qui, laboriosam temporibus quia impedit eum in
+                        aliquid cupiditate suscipit rem iure ea ipsam distinctio quisquam optio asperiores sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quibusdam neque! Modi ratione magnam reprehenderit doloremque necessitatibus blanditiis laboriosam, 
+                        eligendi dolor, eveniet fugit suscipit corrupti. Esse dolorem tenetur sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic reiciendis quo cumque modi animi nostrum, fugiat neque dignissimos unde quidem, vel vitae perspiciatis
+                         quibusdam? Laudantium quibusdam dolorem voluptate quasi? quasi?te quasi?</p>
+        
+
+
+<script>
+
+    //SpreadOperator
+// var ar=["one", "two", "one"]
+// var br=["three", "two", "four"]
+// var con=ar.concat(br)
+// var st=new Set(con)
+// console.log(st)
+
+// var a=new Set(["fill", "funn", "fill"]);
+// Array.from(a)
+// console.log(a)
+
+// Array//var hg=Array.from("con");
+
+/*  var b =[]
+        for(i = 0; i<10; i++)
+        {
+          var a = prompt("enter the value of a")
+          b.push(a);
+        }
+        console.log(b)
+       var c = [...new Set(b)];
+       console.log(c);    */
+
+        
+     /*
+       var a=[1,2,3];
+        var b=[2,3,4]
+       function funn1(){
+         console.log(a+","+ b)
+         
+          }
+          funn1(...a,...b);  
+         
+           NewONE     
+         var a=[1,2,3,4,3,2,5];
+        var b=[];
+        b.push(a)
+        //console.log(b);
+        var c=[...new Set(a)];
+   
+        console.log(c);
+
+   //SpreadOperator
+// var ar=["one", "two", "one"]
+// var br=["three", "two", "four"]
+// var con=ar.concat(br)
+// var st=new Set(con)
+// console.log(st)
+// Array//var hg=Array.from("con");
+
+
+
+
+
+    /*var doc=document.getElementById("u1").children[0];
+    //var arr=Array("[doc]");
+    var arr=Array(doc)
+    console.log(arr)
+    for(var i=0;i<=10;i++){
+
+    }   */
+</script>
+   <!--
+
+    <div class="inr" id="in"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eveniet quaerat saepe aperiam eius, veniam molestiae iste porro quibusdam laborum, 
+        nostrum recusandae illum, alias deserunt quis dignissimos possimus esse. Nam?</p>
+   <ul id="list">
+    <li id="l">ColdWater</li> 
+    <li>HotWater</li>
+   </ul>  
+   <ul id="list1">
+       <li>Burger</li>
+       <li>Bun</li>
+   </ul>
+   <button onclick="funn1()">ClickMe</button>
+    </div>
+    
+        <div id="outer"><h2 style="position:static; margin-top: 40px;">Outer</h2>
+     <div id=d1>The comment</div-->
+      <!--  <div id="inner">
+            <h3>Inner</h3>
+            <div class="d" id="a">A</div>  
+             <div  class="d" id="b">B</div>  
+              <div   class="d" id="c">C</div>
+               <div id="d"  class="d">D</div>  
+                <div id="e"  class="d">E</div><br>
+                <ul id="list">
+                    <li>Coofee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+  
+                </ul>
+                <ul id="list1">
+                    <li>Brue</li>
+                    <li>Boost</li>
+                    <li>Bornvita</li>
+  
+                </ul>
+                <button type="button" onclick="funn1()">click</button>
+            
+                <p style="overflow: visible;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur praesentium necessitatibus, aspernatur inventore rerum reprehenderit perferendis velit esse enim magni voluptates. Molestias esse blanditiis iure saepe assumenda consectetur, provident amet.</p>
+  <br><p style="overflow:visible;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore deserunt at delectus veniam architecto esse nihil omnis dicta necessitatibus consectetur illo, dolores nostrum non in nisi ea numquam. Blanditiis?</p>
+                </div>
+               </div>   -->
+    
+    <script src="js/dp_dn.js">
+        //DomParentElement  And ParentNodeMethod
+       
+        //Dom Traversal Methods
+        //ParentNode , ParentEelement , Childern , 
+        //childNodes, firstChild , firstElementChild, lastChild,  lastElementChild, 
+        //nextElementSibling, nextSibling , previousElementSibling, previousSibling, ....
+       
+    //    DOM Append Methods
+     //CreateElement, createTextNode, 
+        
+     // (appendChild , insertBefore)  ---->>>  OnlyAppend 
+
+        // ( insertAdjacentElement, insertAdjacentHTML  , insertAdjacentText ,) ----->>>> Create and Append  
+        
+      //DOM insertAdjacentPositions
+      
+      // beforebegin , afterbegin, , beforeemd , afterend.......
+
+
+      
+//REmoving Replacing Methods
+
+//removParentElements , RemoveNextSibling previousSibling , removeText.....!!!!!!!
+
+
+
+//DOM CloneMethods
+// connection Between Two tables Links and Etcc......
+
+
+//ContainMethods (True, False), Includes....
+
+
+// hasAttributes, hasChildNodes, HashChangeEvent
+
+//isEqualNode, isSameNode
+
+//SpreadOperator    //GrettingParentId
+
+//BrowserObjectModel
+
+//Chrome , FireFox , Opera , InternetExplorer , Edge ,,......
+
+//Get width ,height , of browserWindow ...
+// //open and close browser window...
+// Move and REsize the BrowserWindow.....
+// scroll to browser window...
+//Get url , HostName , Protocal , of browser Window....
+// Get History of browser window
+
+//LocationObject
+ 
+
+
+
+       
+       
+       
+
+        /*   div{
+    display: table-cell;
+}   
+
+
+<!DOCTYPE html>
+<html>
+<style>
+#d1{
+margin:80px;
+}
+.div1{
+margin: 50px;
+position:relative;
+
+}
+h2{
+margin-top:120px;
+margin:none;
+</style>
+<body>
+
+<p>This is a paragraph. This text has no alignment specified.</p>
+
+<div id="d1" align="center" style="border:1px solid red">
+This is some text in a div element!
+<div class="div1" style=" border:2px solid green"><h2>Long th e div </h2>
+</div>
+
+<p>This is a paragraph. This text has no alignment specified.</p>
+
+</body>
+</html>
+
+*/
+
+//BrowserObjectModel
+
+        
+        </script>
+        
+</body>
+</html>

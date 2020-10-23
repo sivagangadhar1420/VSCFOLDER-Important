@@ -1,0 +1,84 @@
+body{
+	background:#F0EAD6;
+}
+.thd{
+	background:#2E5894;
+}
+.hd{
+	border-bottom: 1px dotted;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Prata', serif;
+}
+p{
+	font-family: 'Economica', sans-serif;
+	text-align: justify;
+}
+.head{
+	border-bottom: 1px dotted;
+}
+.end{
+	background:#E3DAC9;
+}
+.foot{
+	background: gray;
+	opacity: 0.9;
+}
+.bt{
+	border:none;
+}
+@media only screen and (max-width: 600px) {
+.thd1 {
+    	width:100%;
+    	background: orange;
+    }
+    .thd2{
+    	width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+.thd1 {
+    	width:50%;
+    	background: red;
+    }
+    .thd2{
+    	width: 50%;
+    }
+}
+@media only screen and (min-width: 768px) {
+.thd1 {
+    	width:100%;
+    	background: blue;
+    }
+    .thd2{
+    	width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+.thd1 {
+    	width:100%;
+    	background: #2E5894;
+    }
+    .thd2{
+    	width: 100%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+.thd1 {
+    	width:100%;
+    	background: green;
+    }
+    .thd2{
+    	width: 100%;
+    }
+}
+
+@media (min-width:600px) and (max-width: 768px) {
+	.thd1 {
+    	width:50%;
+    	background: green;
+    }
+    .thd2{
+    	width: 100%;
+    }
+}

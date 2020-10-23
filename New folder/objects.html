@@ -1,0 +1,957 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+     
+                    //COnverting Array data into an onbject data   using .tostring();
+
+/*var rows=5;
+    for(var j=1; j<=5; j++)
+    {
+      //  for(var i=j;i<=5;i++){
+      //  for(var i=5; i>=3; i--){
+         //   for(var k=4; k>=(rows-j); k--){
+               document.write(" * ")
+           // }
+            
+      //  }
+     // document.write(" M " + "&nbsp;"  )
+      document.write("<br>")
+    }
+
+    
+ /* 
+  var i,j,k;
+var n=5;
+for(var i=n; i>=1; i--){
+    for(var j=i; j>i; j--){
+        document.write(" * ");
+    }
+    for(var k=1;k<i*2; k++){
+        document.write(" M  ")
+    } document.write("<br>")
+}
+/*for(var i=3;i>=1; i--){
+    document.write(i)
+}     */
+
+                                                                      //OBJECTS
+
+                                          // we can objects in 2 ways (constructor and {})  key,value  storing jason data
+                                          //PROTOTYPES, Object Methods(key ,entries) and Objects  OBject Types
+
+    /*   var a={id:1, name:"Aj", age: 20}
+    document.write(a.age +"<br> ")     */
+       
+                                                                //Object Length
+  
+  /*  console.log(objectLenght = Object.keys(exampleObject).length); 
+       var l=Object.keys(a).length;
+    document.write(l);    */ 
+
+   /* var a=[{id:1, name:"Aj", age: 20, firstname:'Raj', lastname:'kumar'},
+    {id:2, name:"rj", age: 20,  firstname:'Raj', lastname:'kumar'},
+    {id:3, name:"vj", age: 20,  firstname:'Raj', lastname:'kumar'},
+    {id:4, name:"jj", age: 20,  firstname:'Raj', lastname:'kumar'}];
+    
+    var b=[{id:6,name:"rockstart", firstname: "rock", lastname: "star"}]
+
+// console.log(a[0].name , a[1].id, a[3]) 
+
+
+/*var firstname="lilly";
+var lastname="pop";
+var fullname=firstname + lastname;
+console.log(fullname)   
+
+var fullname={firstname:'jhon', lastname:'the don'}
+var final=fullname.firstname + fullname.lastname
+console.log(final)  */
+
+
+/*   var fl=[{firstname:"lol", lastname:"the"}];
+var f=fl.map((p) =>{
+    return p.firstname + p.lastname
+})
+console.log(f)
+document.write(f) */
+
+/*var fl={firstname:"lol", lastname:"the"};
+var d=[fl]
+console.log(d[0].firstname);   */
+
+//console.log(f.firstname)
+//Merging Two Objects
+//console.log(...a, ...b)
+
+ 
+  
+  /* var exampleObject = { 
+                id: 1, 
+                name: 'Arun', 
+                age: 30 
+            } 
+           // console.log(exampleObject)
+  
+            // Using Object.keys().length  method to get length 
+           var objectLenght = Object.keys(exampleObject).length; 
+            console.log(objectLenght);
+         //   console.log(objectLenght.length)
+  
+           // document.querySelector('.output').textContent 
+             //       = objectLenght;      */
+        
+
+/* 
+var a=30;
+var b=40;
+console.log(a+ b);
+var a='30';
+var b='40';
+console.log(a + b)
+// console.log(eval(a) + eval(b))
+
+
+                                                  //Object Concatination   MERGING
+/*
+var a = { a: 1 };
+var b = { b: 2 };
+var c = { c: 3 };
+//var obj=Object.assign(a,b,c)
+//OR
+var obj={...a, ...b, ...c}
+console.log(obj)   */
+
+
+
+ /*let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+let names=[john,pete,mary]
+/*
+console.log(names[0].name) //names[0]  total objectwill print
+console.log(names[1].name)//names[1]
+console.log(names[2].name)//names[2]  */
+
+// console.log(names)
+// console.log(john)
+//console.log(pete)
+//console.log(names)
+
+/*
+ var d=names.map(funn1)
+function funn1(n){
+  return n.age
+ }
+console.log(d)   
+// console.log(john.age)     
+ 
+
+
+/*let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let arr = [ pete, john, mary ];
+
+sortByAge(arr);
+
+// now: [john, mary, pete]
+alert(arr[0].name); // John
+alert(arr[1].name); // Mary
+alert(arr[2].name); // Pete  */
+    
+ /*  
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+ 
+ console.log(john) 
+ console.log(john.name)  */
+ 
+/*
+var names=[{fname: 'sanjay', lname:'sahoo'},
+ {fname: 'sanjay', lname:'sahoo'},
+ {fname: 'sanjay', lname:'sahoo'}];
+
+var x=names.map(clutter);
+function clutter(c){
+  return c.fname + " " + c.lname;
+  
+}
+console.log(x) 
+document.write(x)  */
+
+
+                                                                //Object Concatination  MERGING
+/*
+var a = { a: 1 };
+var b = { b: 2 };
+var c = { c: 3 };
+//var obj=Object.assign(a,b,c)
+//OR
+var obj={...a, ...b, ...c}
+console.log(obj)   
+ 
+                                                       // Object creation methods
+ 
+ 
+ 
+ var s1={id:1,name:"sai"}
+                                                        //Adding
+ s1.gender="Male";
+ //Updating
+ s1.gender= "Female"
+
+                                                            //Deleting
+delete s1.gender
+ var p=[1,2];
+ var g=p.push(s1);
+ //document.write(g)
+console.log(g)
+
+ 
+ 
+ var s2={}
+ s2.id=2;
+ s2.name="ramu";
+
+ var s3=new Object()
+ s3.id=3;
+ s3.name="Manoj";
+ 
+ function student(id,name1){
+   this.id1=id;
+   this.name2=name1;
+ }
+ var s4=new student(4,'venu');
+
+ document.write(JSON.stringify(s1)+"<hr>")
+ 
+ document.write(JSON.stringify(s2)+"<hr>")
+ 
+ document.write(JSON.stringify(s3)+"<hr>")
+ 
+ document.write(JSON.stringify(s4)+"<hr>")    
+
+                                                                /* With array 
+var mydetails=[{
+     Title: "Praticieng on objects",
+     time: 01-39,
+     Author: "KommaReddyGREddy"
+ }];
+ console.log(mydetails);
+                                                                          //With array of object
+   var print=mydetails.map((details) => `Go & do  ${details.Title} Mr. ${details.Author} `)
+
+   
+/* with onlny object
+    var mydetails={
+     Title: "Praticieng on objects",
+     time: 01-39,
+     Author: "KommaReddyGREddy"};
+ console.log(mydetails);
+ console.log(` Go And do ${mydetails.Title} Mr. ${mydetails.Author}`);
+ */
+
+
+                                                      //Creating schedule meetingsToday    NESTED OBJECTS
+/*
+  var mytodos={
+day: 'monday',
+meeting:0,
+meetDone:0,
+meetingLeft:0,
+
+addmeeting:function(p){
+  this.meeting= this.meeting + p
+  return `U have ${p} today`
+  },
+  meetingDone: function(a){
+    this.meetDone= this.meetDone + a
+  },
+  meetingLeft: function(){
+    this.meetingLeft=this.meeting - this.meetDone
+  
+  
+    
+  },
+    summary:function(){
+    this.meeting = 0;
+    this.meetDone=0;
+    this.meetingLeft=0;
+
+    return `u have ${this.meeting}  meetings `
+  }
+}
+ mytodos.addmeeting(5)
+ mytodos.meetingDone(3)
+ mytodos.meetingLeft()
+  mytodos.summary()
+ // mytodos.reset()
+  console.log(mytodos.summary())
+
+
+  console.log(mytodos)     */
+  
+
+//mytodos.addmeeting(4);
+//mytodos.meetingsleft(2)
+//console.log(mytodos.summary())  
+//console.log(mytodos.summary1())  
+//console.log(mytodos)     
+
+                                                                    //Pratice
+
+/* var mytodos={
+  meeting:0,
+day: 'monday',
+meetDone: 0, meetingsleft: 0 ,summaryOfDay:"datails"};
+
+
+mytodos.name="Mr.Rakesh";
+mytodos.name="Mr.RakeshReddy"
+
+console.log(mytodos)
+
+
+var addmeeting=function(a ,p){
+  console.log(`U have ${p} Meetings Today Today`)
+  a.meeting= a.meeting + p
+}
+  
+  var meetingDone=function(d, g){
+  console.log(`U have done ${g}  MeetingsToday`)
+
+  d.meetDone= d.meetDone + g;
+}
+var meetingLeft=function(l ,v){
+  console.log(`U havent complete meetings today still ${v} Meeting left`)
+  l.meetingsleft=l.meeting - l.meetDone;
+}
+ 
+
+var summaryOfDay=function( g,m){
+
+ console.log(`U havent complete meetings today still ${m} Meeting left`)
+  g.summaryOfDay=g.meeting - g.meetDone;
+
+}
+
+var dayreset=function(p ,c){
+  console.log(`u have  ${c}  meetings  today`)
+ p.meeting= 0;
+  p.meetingLeft= 0;
+  
+}
+
+addmeeting(mytodos, 4)
+meetingDone(mytodos, 3)
+meetingLeft(mytodos,1)
+summaryOfDay(mytodos,1)
+
+dayreset(mytodos,0)
+console.log(mytodos)
+
+
+
+
+//console.log(summaryofDay(mytodos))
+//console.log(l)
+
+
+
+
+//console.log(4)
+*/
+ /*  function fun1(n1,n2){
+  return (n1+n2);
+}
+var d=fun1(1,2);
+console.log(d);
+var sum=((a,b)=>
+console.log(`The sum of  ${a} and ${b} total is: ${a+b}` )
+)
+//sum(2,4);
+
+var add=((p)=>{
+  if(p === true){
+  p();
+}
+  console.log("CAlling callback");
+
+})
+add(sum(2,4))
+//sum(sum(2,4))    */
+
+                                              //Anonymous //When u click on browser it will shows console data
+/*
+document.addEventListener('click', function(){
+  console.log("This is Anonymous function");
+});
+    
+document.addEventListener('click', sum);
+// document.addEventListener('click', sum());
+function sum(){
+  var a=10;
+  var b=20;
+
+  console.log(`The sum of  ${a} and ${b} total is: ${a+b}` )
+}
+document.addEventListener('click', sum());
+var two=function(a,b){
+  console.log(`The sum of  ${a} and ${b} total is: ${a+b}` )
+}
+two(5,7)
+
+document.addEventListener('click', sum()); //If we wrote method like sum() in documents it will print automatically
+var two=((g,f)=>{
+
+  console.log(`The sum of  ${g} and ${f} total is: ${g+f}` )
+})
+
+two(5,7)      */
+
+                                                    //Creating object in constructor style
+/*
+function demand(id,name,age)
+{
+this.id=1;
+this.name=name, 
+this.age=age
+}
+var s=new demand(1,'rajili', 20)
+
+console.log(s)
+console.log(JSON.stringify(s))
+
+var obj = new function() { 
+        this.name = ""; 
+        this.age = ""; 
+      /*  this.printInfo = function() { 
+            console.log(this.name); 
+            console.log(this.age); 
+        };   */
+    
+  /*  
+                                                        // Initializing object. 
+obj.name = "Vineet"; 
+obj.age = 20; 
+console.log(obj.name);
+console.log(obj.age);
+  
+// Calling method of the object. 
+//obj.printInfo(); 
+
+var s1=new Object();
+s1.id=1;
+s1.name='arya'
+console.log(s1)
+
+var t={
+  name: " ",
+  id: "", 
+  age: " ",
+  abovedetails: function() {
+console.log(this.name)
+console.log(this.age)
+console.log(this.id)
+  } }
+
+  t.name="Rocky";
+  t.id=3;
+  t.age=30;
+t.abovedetails();
+
+function Human(id,nam,age,gender){
+  this.id=id,
+this.name=nam,
+  this.age=age,
+  this.gender=gender
+}
+var firstperson=new Human(1,"jivan", 30, 'Male');
+console.log(JSON.stringify(firstperson));
+console.log(firstperson);
+
+var lastperson=new Human(2,'jyothi', 23,'Femal')
+console.log(JSON.stringify(lastperson));
+console.log(lastperson);
+
+var person=new Object();
+person.name="balraj";
+person.nn="bablu";
+person.age="25";
+console.log( person)
+console.log(JSON.stringify(person))
+
+var person1=new Object();
+person1.name="vinod";
+person1.nn="vinnu";
+person1.age="25";
+
+console.log(person1)
+console.log(JSON.stringify(person1))    */
+
+
+/*
+var m = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+//console.log(materials[0,1,2,3].length);
+for(var i=0;i<m.length; i++)
+    {
+      console.log(m[i].length)
+    }
+  
+//console.log(materials.map(material => material.length));
+// expected output: Array [8, 6, 7, 9]  */
+/*  function student(id,nam e,age,gender){
+  this.id=id;
+  this.nam=name;
+  this.age=age;
+  this.gender=gender;
+  
+}
+
+var store=new student(1,'reethu', 25,"Femlae")
+
+console.log(store)   */
+
+                                        //We cant Delete The Entire Project At A time We can delete the roperties One By One
+/*  var s={id: 1, name: "rak"}
+delete s.name
+console.log(s)   
+var a={id: 1, 
+name: "rak", 
+ initial: 'Gl',
+ salaryies: 25000,
+salary: function(){
+          return 25000;  },
+fullname: function(){
+return this.name+""+this.initial   },
+favMovies:["KGF", 'BB-2','Maharshi'],
+ email: "REDDY@Gmail.com",
+ livings: [{city: 'chandigrh', town: 'arial'},{city: 'chandigrhs', town: 'arials'}],
+ living:{
+   city: "Hyderabad",
+   Town:"HyderbadTown"
+   
+ }
+}
+console.log(a)
+console.log(a.salary())
+console.log(a.fullname())
+console.log(a.favMovies)//favmovies[1]);
+console.log(a.livings[1])
+console.log(a.living.city);
+/*
+var f=[{firstname: "Maharshi", lastname:"Sarileru"}]
+var full=f.map(funn1);
+function funn1(p){
+ return p.firstname+ ""+ p.lastname
+}
+console.log(full)
+console.log(JSON.stringify(full))  
+
+var f=new Object();
+f.firstname= "rocky",
+f.lastname= " Bhai ";
+var full=f.firstname + f.lastname
+console.log(f['firstname'])
+console.log(full);
+
+function fullname(firstname,lastname, finalname){
+  this.firstname = firstname;
+  this.lastname = lastname;
+  this.finalname =  this.firstname + this.lastname
+
+}
+var s= new fullname('reethu', "kumar")
+console.log(s)
+console.log(s.firstname + s.lastname)      */
+
+/*  var a=[10,20,30];
+a[1]=25,
+a[2]=35;
+console.log(a)   */
+/*  var obj=['gym', 'fit', 'work', 'hard']
+var fill=obj.indexOf('fit')
+console.log(fill)  */
+
+/*var chck=['gym', 'fit', 'work', 'hard']
+var ver=chck.indexOf(funn1)
+function funn1(p){
+  if(p === 'fit'){
+    return true;
+  }
+}
+console.log(ver)  */
+ /*   var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+ var f=fruits.includes('Apple');
+ //For find
+ /*function funn1(p){
+   return p === 'Banana'
+ }   
+ console.log(f)
+ console.log(f)   */
+ /*  var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+
+    var d=fruits.indexOf('Banana')
+    console.log(d)   */
+    // Check if a value exists in the fruits array
+   /* if(fruits.indexOf("Mango") !== 1){
+        console.log("it is in")
+    } else{
+        alert("Value does not exists!")
+    }  
+
+   /*   var fruits=["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    var fc=fruits.indexOf(funn1)
+    function funn1(p){
+      if(p.Bananaa !== 1){
+        console.log("it is in")
+      }else {
+        console.log("null")
+      }
+    }
+    
+    
+//console.log(obj)
+//console.log(obj.indexOf)
+/*
+var find=obj.findIndex(funn1)
+function funn1(p){
+  if(p.gym === 'true'){
+  }
+}
+console.log(find)
+
+
+/*var fruits=['apple', 'bananna', 'mango']
+ 
+  /* if(fruits[1] === 'apple')
+{
+  console.log('true')
+}   else{
+  console.log('false')
+}     
+var ch=fruits.indexOf('apple');
+console.log(ch)    */
+ 
+ 
+
+                                                    //Seraching element is in aray or using includes
+ /*   var fruits=['apple', 'bananna', 'mango'];
+var d=fruits.includes("apple");
+console.log(d )    */
+
+/* var fruits=['apple', 'bananna', 'mango']
+var ch=fruits.find((p)=>
+ p === 'apple'
+
+
+)
+console.log(ch)    */ 
+
+//Filter in Array of Object
+/*
+var a=[
+  {name:"raju",
+  age: 30 },
+  {name:"mohan", age:10},
+  {name: "kranthi", age:25}];
+  var filt=a.filter(funn1);
+  function funn1(p,q){
+    return p.age > 18 ;
+  
+  }
+console.log(filt)     */
+
+
+                                                    //Find the It is in array of Object or not
+/*    var newTodos=[
+  {title:"Buy Bread",
+  isdone: true
+},  {title:"Go To gym",
+  isdone: true
+},  {title:"Buy Zaam",
+  isdone: false
+}];
+var search=newTodos.find(funn1);
+function funn1(todo){
+  //console.log(todo)
+  return todo.title === 'Go To gym'
+
+}
+console.log(search)     */  // toLowerCase()
+              
+
+//In arraOfObject if we find the property if it is in arraOfObj it will return data if not it will return Undefined 
+
+                                   //Prototypes in javascript
+ 
+ /*  function funn1(Name,Id){
+this.Name = Name;
+this.Id=Id
+
+//  OR This can also write this.getName=function(){
+ // return this.name;
+}
+    
+    funn1.prototype.getName= function (){  
+       
+    return this.Name
+    }
+    funn1.prototype.getId= function (){  
+       
+      return this.Id
+       
+    }
+ var e1=new funn1('Mark' ,1)
+ var e2=new funn1 ('sara',2)
+ console.log(e1);
+ console.log(e2)   */
+
+
+/*    function obj(name,id,age,gender){
+  var co=new Object()  //var co={}
+  co.name=name;
+  co.id=id;
+  co.age=age;
+  co.gender=gender;
+  return co;
+}
+var s=new obj('lucky',1,29,'Female');     // var s =obj('lucky', 1,29,'female')
+console.log(s)   */
+
+//Javascript constant variables with array
+/*  var a=[1,2,3,"string"]
+a[1]=5;
+a[2]="concat";
+a[3]= 1;
+console.log(a)   */
+
+                                                          //OBJECT_METHODS
+ /* var a={name:"tom", age:80, profession:"MakingFilims"};
+//var k=Object.keys(a) 
+// Object.values(a);
+var k=Object.entries(a)
+console.log( k + " ")
+console.log(k ,  )   */
+
+                                                            //Set_Methods
+                                                              //WeakSet , WeakMap
+                                                              //Add , Clear , delete ,  Size
+
+/*  var car={
+  name:'volvo', price:21000
+}
+
+ var a=[1,2,3,4];
+var b=new Set(a);
+b.add(100)
+b.add(car)
+
+b.add({a:1,b:1})
+/* var f=b.forEach(funn1);
+function funn1(p){
+  console.log(p)
+}
+//b.clear();  
+
+//b.delete(a[2]) 
+//b.delete(2)
+
+//b.clear();  
+
+console.log(b.size);
+console.log(b);     
+
+                                                                            //WeakSet
+var w=new WeakSet();  
+var car={name:"volvo", price:20000};
+var plane={name:"flyEmirates" , price:50000}
+w.add(car)
+w.add(plane)
+w.delete(car)  
+
+console.log(w)
+                                                                        //WakMap
+var a=new WeakMap();
+ var c={id:1,name:"rocky"}
+ var b={age: 20}
+   a.set(b,c)
+   console.log(a)
+ 
+
+ var wm=new WeakMap();
+ var map={id:1}
+ var mike={name:'saheth', age:25}
+ wm.set(mike, map)
+ console.log(wm)   
+
+
+/*                                                                      SET_ TIMEOUT
+function funn1(){
+  setTimeout(()=>{
+    console.log("Print")
+  },1500);
+}
+funn1();
+
+
+/*                                                                   Without an array
+var a=[10,21,32];
+var b=a.map(funn1)
+function funn1(p){
+  console.log(p)
+}  */
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+//MATH_Methods
+
+//Ceil(x) , floor(X) , round(x) , trunc(x) , max(x,y,z, ... ,n) , min(x,y,z,....,n), sqrt(x), cbrt(x) , pow(x,y) , random() , abs(x) , pi= 3.14, E= 2.71,  cos sin,log(log2 ,log10), sign
+
+/*   var a=Math.ceil(5.2);// (-1.2),
+console.log(a)
+var b=Math.floor(2.3)// (-2.60)
+console.log(b);
+var c=Math.round(2.6)// (2.1)
+console.log(c)
+var d=Math.trunc(8.2)
+console.log(d)
+var e=Math.max(1,99,2,34,42)
+console.log(e)
+var f=Math.min(21,2,34,88,-1,10,210,-210);
+console.log(f)  
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+      var a=[2,3,4,5,54,65,76,12,31,64]
+var g=a.map(funn1)
+function funn1(p){
+  return Math.sqrt(p)
+}
+ console.log(g)    
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ var n=[2,4,8,64,21]
+var a=n.map(funn1);
+function funn1(p){
+  return Math.cbrt(p) 
+} 
+var a=Math.cbrt(64)
+  // 6x6x6  (8) 2 X 2
+console.log(a)    
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//var a=Math.pow(4,3); //  4 : Number , 3 : 4 x 4 x  4  (4x3)
+var a=Math.pow(5,3)
+console.log(a)  
+var a=Math.floor(Math.random() * 2 )+1;  //  Math.random() * 2  from 0 to 2 and adds  1 number to it  2 means from 0 to 1 1000 means 0 to 9999
+ console.log(a)
+
+ // Math. (.(dot) Indicates access the number)  
+
+var a=Math.abs(-23.5)//(-23+4);// (null), ('string'), 
+console.log(a)  
+ var a=Math.PI / 3; //Math.PI ,  * 3 
+ console.log(a)  
+var a=4* Math.PI /180;
+
+console.log(a)  
+var a=Math.E;
+console.log(a)   
+var a=Math.sign(22) 
+var a=Math.sign(-22)
+console.log(a)  
+var a= Math.sin(0);
+console.log(a);
+var a=Math.cos(0);
+console.log(a)   
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ function makeid(length) {
+   var result           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZab*()^&!@#$%^&_+cdefghijklmnopqrstuvwxyz0123456789';
+   var charactersLength = characters.length;
+  // for ( var i = 0; i <characters.length; i++ ) {
+    for ( var i = 0; i < 5; i++ ) {
+     // result += characters.charCodeAt(Math.floor(Math.random() * charactersLength));
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   
+   }
+   return result;
+}
+
+console.log(makeid());  
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+//   let r = Math.random().toString(6).substring(2);
+     //   console.log(r);
+
+
+
+function random() {
+  	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+var string_length = 8;
+var result =" ";
+  var len=chars.length;
+	for (var i=0; i< string_length; i++) {
+    result += chars.charAt( Math.floor(Math.random() * len));
+	}
+  return result;
+}
+console.log(random())    
+var a=25;
+var b=21;
+console.log(Math.floor(Math.random() * (a-b) ) + 5)  */
+
+
+/*  Map_ Mthod
+var a=[10,20,30,40];
+var p="";
+var b=a.map(funn1);
+function funn1(p){
+return p * a[0]
+}
+console.log(b)  
+
+var a=[10,20,30,40];
+var p="";
+var b=a.map(funn1);
+function funn1(p){
+  p++;
+return p;
+}
+console.log(b)  
+
+var a=[{price:100, cost:100},
+{price:100,cost:100},
+{price:100, cost:100}];
+ var b=a.map(funn1);
+ function funn1(p){
+   return p.price.toString() + p.cost.toString()
+ }   console.log(b); */
+
+ //ToFixed will returns the from (.)point to limiting numbers 
+/*  var a=22;
+var b=7;
+var result= 22/7
+console.log(result.toFixed(3));  */
+
+
+
+
+
+
+     </script>
+     
+</head>
+<body>
+    
+</body>
+</html>
